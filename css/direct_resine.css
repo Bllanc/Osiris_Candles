@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background: pink;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    background: white;
+}
+
+.body {
+    background-color: whitesmoke;
+}
+
+.categorie {
+    width: 100%;
+    margin: 2% auto;
+}
+
+table {
+    width: 80%;
+    margin: 5% auto;
+}
+
+td {
+    position: relative;
+    padding: 1.5%;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+}
+
+td img {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+td div.blanc {
+    position: relative;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    opacity: 0.7;
+    width: 280px;
+    height: 280px;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+td div.blanc h4 {
+    position: absolute;
+    display: block;
+    top: 45%;
+    bottom: 45%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 3;
+}
+
+td div.blanc:hover {
+    opacity: 1;
+    border-radius: 8%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+td img:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    border-radius: 8%;
+    cursor: pointer;
+    transition: 0.5s;
+}

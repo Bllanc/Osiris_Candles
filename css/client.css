@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+#client {
+    padding: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+#client thead {
+    border-bottom: 3px solid pink;
+}
+
+#client thead td {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#client tr {
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#client td {
+    overflow-wrap: break-word;
+    padding: 10px;
+    text-align: center;
+}
+
+#client tbody tr:last-child {
+    border-bottom: none;
+}
+
+#client tbody tr:nth-child(odd) {
+    background: #CCC
+}
+
+#client tbody tr:nth-child(even) {
+    background: #FFF
+}
+
+#client tbody tr:hover {
+    background-color: pink;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    height: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #c6070052;
+    border-radius: 20px;
+}

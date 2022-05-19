@@ -1,0 +1,57 @@
+id_fondant,nom_fondant,parfum_fondant,image_fondant,poids_fondant,stock_fondant,prix_fondant,forme_fondant
+1,fondant,aloe vera ,,15G,3,2,0
+2,fondant,aloe vera ,,6G,2,"1,15",1
+3,fondant,ambre,,15g,4,2,0
+4,fondant,ambre,,6g,2,"1,15",1
+5,fondant,banane,,15g,1,2,0
+6,fondant,banane,,6g,1,"1,15",1
+7,fondant,bois de santal,,15g,4,2,0
+8,fondant,bois de santal,,6g,5,"1,15",1
+9,fondant,brioche au beurre,,15g,1,2,0
+10,fondant,brioche au beurre,,6g,2,"1,15",1
+11,fondant,cassis freesia,,15g,1,2,0
+12,fondant,cassis freesia,,6g,2,"1,15",1
+13,fondant,caramel beurre salé,,15g,4,2,0
+14,fondant,caramel beurre salé,,6g,2,"1,15",1
+15,fondant,cerise noire explosive,,15g,4,2,0
+16,fondant,cerise noire explosive,,6g,2,"1,15",1
+17,fondant,chocolat noisette,,15g,4,2,0
+18,fondant,chocolat noisette,,6g,4,"1,15",1
+19,fondant,edelweiss,,15g,7,2,0
+20,fondant,edelweiss,,6g,2,"1,15",1
+21,fondant,fleur de coton,,15g,5,2,0
+22,fondant,fleur de coton,,6g,3,"1,15",1
+23,fondant,fraise des bois,,15g,3,2,0
+24,fondant,fraise des bois,,6g,3,"1,15",1
+25,fondant,framboise,,15g,6,2,0
+26,fondant,framboise,,6g,5,"1,15",1
+27,fondant,frangipanier jasmin,,15g,6,2,0
+28,fondant,frangipanier jasmin,,6g,2,"1,15",1
+29,fondant,lavande,,15g,5,2,0
+30,fondant,lavande,,6g,2,"1,15",1
+31,fondant,madeleine,,15g,2,2,0
+32,fondant,madeleine,,6g,1,"1,15",1
+33,fondant,mimosa,,15g,3,2,0
+34,fondant,mimosa,,6g,2,"1,15",1
+35,fondant,mon beau sapin,,15g,1,2,0
+36,fondant,mon beau sapin,,6g,4,"1,15",1
+37,fondant,noix de coco,,15g,4,2,0
+38,fondant,noix de coco,,6g,4,"1,15",1
+39,fondant,pain d’épices,,15g,4,2,0
+40,fondant,pain d’épices,,6g,1,"1,15",1
+41,fondant,patchouli,,15g,3,2,0
+42,fondant,patchouli,,6g,1,"1,15",1
+43,fondant,pomme cannelle,,15g,2,2,0
+44,fondant,pomme cannelle,,6g,2,"1,15",1
+45,fondant,pivoine,,15g,0,2,0
+46,fondant,pivoine,,6g,1,"1,15",1
+47,fondant,rose,,15g,3,2,0
+48,fondant,rose,,6g,1,"1,15",1
+49,fondant,thé noir vanille,,15g,3,2,0
+50,fondant,thé noir vanille,,6g,2,"1,15",1
+51,fondant,vanille,,15g,2,2,0
+52,fondant,vanille,,6g,3,"1,15",1
+53,fondant,vin chaud,,15g,3,2,0
+54,fondant,vin chaud,,6g,2,"1,15",1
+55,fondant,violette,,15g,1,2,0
+56,fondant,violette,,6g,1,"1,15",1

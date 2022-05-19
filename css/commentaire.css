@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+#commentaires {
+    margin: 2% auto;
+    width: 90%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 40px;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+#commentaires button {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+textarea {
+    margin-top: 1%;
+}
+
+.rating {
+    direction: rtl;
+    max-width: 32%;
+}
+
+.rating a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 3em;
+    transition: color .4s;
+}
+
+.rating a:hover,
+.rating a:focus,
+.rating a:hover~a,
+.rating a:focus~a {
+    color: gold;
+    cursor: pointer;
+}
