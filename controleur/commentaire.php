@@ -11,7 +11,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Osiris Candles - Mon Compte </title>
+    <title>Osiris Candles - Commentaires </title>
     <meta name='viewport' content='width=1000, initial-scale=1'>
     <link rel="icon" href="<?php echo $path ?>/res/img/osiris_candles.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />

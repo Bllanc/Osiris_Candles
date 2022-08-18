@@ -1,17 +1,11 @@
-$(document).ready(function() {
-            let slider = function(id) {
-                self = this;
-                this.div = $(id);
-                this.largeurCache = this.div.width();
-                this.largeur = 0;
-                this.div.find('p').each(function() {
-                    self.largeur += $(this).width();
-                    self.largeur += $parseInt($(this).css("padding-left"));
-                    self.largeur += $parseInt($(this).css("padding-right"));
-                    self.largeur += $parseInt($(this).css("margin-left"));
-                    self.largeur += $parseInt($(this).css("margin-left"));
-                });
-                this.prec = $(this.div.find(".prec"),
-                    this.prec = $(this.div.find(".suivre"), )
-                }
-            })
+let slide = new Array("foret-peuplier.jpg", "paysage-montagne.jpg", "chemin-automne.jpg", "prairie-alpes.jpg");
+let numero = 0;
+
+function ChangeSlide(sens) {
+    numero = numero + sens;
+    if (numero < 0)
+        numero = slide.length - 1;
+    if (numero > slide.length - 1)
+        numero = 0;
+    document.getElementById("comm").src = slide[numero];
+}
