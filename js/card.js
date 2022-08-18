@@ -19,4 +19,13 @@ $('document').ready(function() {
         $('.prix_end' + id_produit).val(prix_fin); /* prix final avec la multiplication*/
         $(".prixs" + id_produit).html(prix_fin.toFixed(2) + "€"); /* affichage du prix dans le p */
     });
+
+    $('#fio').click(function() {
+        $('.brume').hide();
+        $('.fiole').toggle('slow');
+    })
+    $('#bru').click(function() {
+        $('.brume').toggle('slow');
+        $('.fiole').hide();
+    })
 });

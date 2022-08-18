@@ -15,10 +15,10 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
     <div id="logo">
         <h2>Réseaux sociaux</h2>
         <a class="fb" href="https://www.facebook.com/OsirisCandles/" target='_blank'>
-            <ion-icon  name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
         </a>
         <a class="fb" href="https://www.instagram.com/osiriscandles1/" target='_blank'>
-            <ion-icon  name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
         </a>
     </div>
     <hr>
@@ -48,14 +48,14 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
         </ul>
 
         <hr>
-        <div>
+        <!--  <div>
             <p class="cc"><a href="https://cyberinfo-connect.fr/" target="_blank">Réalisé par CyberInfo-Connect</a>
                 <a href="https://www.facebook.com/GuillaumeMantez/" target="_blank">
                     <ion-icon name="logo-facebook"></ion-icon>
                 </a>
 
             </p>
-        </div>
+        </div>-->
 </footer>
 </div>
 
