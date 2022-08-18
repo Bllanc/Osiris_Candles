@@ -20,24 +20,24 @@ require_once('./bdd/connect_inc.php');
     <div id="avis">
 
         <div class="slider">
-            <div class="prec"  onclick="ChangeSlide(-1)">
+            <div class="prec" onclick="ChangeSlide(-1)">
                 <ion-icon size="large" name="arrow-back"></ion-icon>
             </div>
 
 
 
             <div id="comm">
-                <p> <?php
-                    $req = $pdo->query('SELECT * FROM commentaire ORDER BY note DESC');
-                    foreach ($req as $comm) { ?>
-                <div class="commentaires">
-                    <p class="commentaire_<?php echo $comm['id_commentaire']; ?>"></p>
+                <div> <?php
+                        $req = $pdo->query('SELECT commentaire FROM commentaire ORDER BY note DESC');
+                        foreach ($req as $comm) { ?>
+                        <div class="commentaires">
+                            <p class="commentaire_<?php echo $comm['id_commentaire']; ?>"></p>
+                        </div>
+                    <?php } ?>
                 </div>
-            <?php } ?></p>
             </div>
 
 
-            
 
             <div class="suivre" onclick="ChangeSlide(1)">
                 <ion-icon size="large" name="arrow-forward"></ion-icon>
