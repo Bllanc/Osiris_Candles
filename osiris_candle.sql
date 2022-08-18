@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  jeu. 07 avr. 2022 à 10:23
+-- Généré le :  jeu. 18 août 2022 à 11:42
 -- Version du serveur :  5.7.17
 -- Version de PHP :  5.6.30
 
@@ -62,16 +62,15 @@ CREATE TABLE `bougie` (
   `image_bougie` text NOT NULL,
   `poids_bougie` float NOT NULL,
   `stock_bougie` int(11) NOT NULL,
-  `prix_bougie` float NOT NULL,
-  `promo_bougie` int(11) DEFAULT NULL
+  `prix_bougie` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `bougie`
 --
 
-INSERT INTO `bougie` (`id_bougie`, `nom_bougie`, `parfum_bougie`, `image_bougie`, `poids_bougie`, `stock_bougie`, `prix_bougie`, `promo_bougie`) VALUES
-(1, 'Bougie Gourmande', 'Ambre, Agrumes, Aloe Verra, Banane, Bois de Santal, Brioche au Beurre, Caramel Beurre Salé, Cassis Fressia, Cerise Noire Explosive, Chocolat Noisette, Edelweiss, Fleur de Coton, Fraise des Bois, Framboise, Frangipanier Jasmin, Lavande, Licorne, Madeleine ,Mimosa, Noix de Coco, Pain d\'épices, Patchouli, Pivoine, Vanille, Vin Chaud, Violette', 'bougie_gourmande.png', 350, 1, 17, 0);
+INSERT INTO `bougie` (`id_bougie`, `nom_bougie`, `parfum_bougie`, `image_bougie`, `poids_bougie`, `stock_bougie`, `prix_bougie`) VALUES
+(1, 'Bougie Gourmande', 'Ambre, Agrumes, Aloe Verra, Banane, Bois de Santal, Brioche au Beurre, Caramel Beurre Salé, Cassis Fressia, Cerise Noire Explosive, Chocolat Noisette, Edelweiss, Fleur de Coton, Fraise des Bois, Framboise, Frangipanier Jasmin, Lavande, Licorne, Madeleine ,Mimosa, Noix de Coco, Pain d\'épices, Patchouli, Pivoine, Vanille, Vin Chaud, Violette', 'bougie_gourmande.png', 350, 1, 17);
 
 -- --------------------------------------------------------
 
@@ -83,25 +82,23 @@ CREATE TABLE `brume_parfume` (
   `id_brume` int(11) NOT NULL,
   `nom_brume` varchar(255) NOT NULL,
   `parfum_brume` varchar(255) NOT NULL,
-  `img_brume` text NOT NULL,
-  `poids_brume_50` float NOT NULL,
-  `stock_brume_50` int(11) NOT NULL,
-  `prix_brume_50` float NOT NULL,
-  `poids_brume_80` float NOT NULL,
-  `stock_brume_80` int(11) NOT NULL,
-  `prix_brume_80` float NOT NULL,
-  `poids_brume_100` float NOT NULL,
-  `stock_brume_100` int(11) NOT NULL,
-  `prix_brume_100` float NOT NULL,
-  `promo_brume` int(11) DEFAULT NULL
+  `image_brume` text NOT NULL,
+  `poids_brume` float NOT NULL,
+  `stock_brume` int(11) NOT NULL,
+  `prix_brume` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- --------------------------------------------------------
+
 --
--- Déchargement des données de la table `brume_parfume`
+-- Structure de la table `commentaire`
 --
 
-INSERT INTO `brume_parfume` (`id_brume`, `nom_brume`, `parfum_brume`, `img_brume`, `poids_brume_50`, `stock_brume_50`, `prix_brume_50`, `poids_brume_80`, `stock_brume_80`, `prix_brume_80`, `poids_brume_100`, `stock_brume_100`, `prix_brume_100`, `promo_brume`) VALUES
-(1, 'Test Brume', 'Vanille', '', 10, 10, 10, 10, 10, 10, 1, 10, 10, NULL);
+CREATE TABLE `commentaire` (
+  `id_commentaire` int(11) NOT NULL,
+  `commentaire` text NOT NULL,
+  `note` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -238,8 +235,7 @@ CREATE TABLE `utilisateur` (
 --
 
 INSERT INTO `utilisateur` (`id_utilisateur`, `nom_utilisateur`, `prenom_utilisateur`, `mail_utilisateur`, `motdepasse`, `civilite_utilisateur`, `admin`, `validation`, `tel_utilisateur`, `adresse_utilisateur`, `code_postal`, `ville`, `pays`, `fidelite`, `user_img`) VALUES
-(2, 'Averlan', 'Allan', 'allan.averlan@laposte.net', '$2y$10$iufKYK2FeM2n/FWP8ZT9wOD5s5rh/z9ZCJjmnEu00Ib/sG3DIeAQ.', 'Monsieur', 0, 1, '0636891425', '752 Rue de L\'Église', '62340', 'Hames-Boucres', 'France', 50, 'h_pirate.svg'),
-(3, 'Declemy', 'Jade', 'declemyjade@gmail.com', '$2y$10$UYik5mMdp7y6MOhTFPfSX.OgY/acy1ApgZ1/oymoVodGpaXkA3tZO', 'Madame', 1, 1, NULL, NULL, NULL, NULL, NULL, 200, 'f_rose.svg');
+(4, 'Declemy', 'Jade', 'declemyjade@gmail.com', '$2y$10$tDjwRs7PLBQGgHle7k7DFOudVtdCqKDorkkZAaUhwEl5NRj8K3jC.', 'Madame', 1, 1, '0636891425', '650 Chemin Latéral', '62730', 'Les Attaques', 'France', NULL, 'f_rose.svg');
 
 --
 -- Index pour les tables déchargées
@@ -262,6 +258,12 @@ ALTER TABLE `bougie`
 --
 ALTER TABLE `brume_parfume`
   ADD PRIMARY KEY (`id_brume`);
+
+--
+-- Index pour la table `commentaire`
+--
+ALTER TABLE `commentaire`
+  ADD PRIMARY KEY (`id_commentaire`);
 
 --
 -- Index pour la table `fiole`
@@ -294,7 +296,12 @@ ALTER TABLE `bougie`
 -- AUTO_INCREMENT pour la table `brume_parfume`
 --
 ALTER TABLE `brume_parfume`
-  MODIFY `id_brume` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_brume` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT pour la table `commentaire`
+--
+ALTER TABLE `commentaire`
+  MODIFY `id_commentaire` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `fiole`
 --
@@ -309,7 +316,7 @@ ALTER TABLE `fondant`
 -- AUTO_INCREMENT pour la table `utilisateur`
 --
 ALTER TABLE `utilisateur`
-  MODIFY `id_utilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;COMMIT;
+  MODIFY `id_utilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
