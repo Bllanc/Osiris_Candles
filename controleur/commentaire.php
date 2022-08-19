@@ -60,10 +60,10 @@ require_once('../bdd/connect_inc.php');
 
         <div id="commentaires">
             <h2>Laisser un Commentaire</h2>
-            <form method="POST" action="add_commentaire.php">
-                <textarea rows="10" cols="80" maxlength="255" placeholder="255 caractères max"></textarea>
+            <form method="POST" action="../bdd/add_commentaire.php">
+                <textarea name="commentaire" rows="10" cols="80" maxlength="255" placeholder="255 caractères max"></textarea>
                 <br>
-                <div class="rating">
+                <div name ="note" class="rating">
                     <!--
    --><a href="#5" title="Donner 5 étoiles">☆</a>
                     <!--
