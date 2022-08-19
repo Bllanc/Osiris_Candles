@@ -31,10 +31,7 @@
 }
 .suivre:hover,
 .prec:hover {
-  background: pink;
-  border-radius: 50%;
-  color: white;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  color: rgba(230, 84, 108, 0.647);
   transform: scale(1.2);
   transition: all 0.8s ease-in-out;
 }
@@ -71,9 +68,9 @@
   flex-direction: column;
   width: 50%;
   margin: 0 auto;
-  border: 1px solid  rgba(230, 84, 109, 0.288);
-  border-radius:20px;
-  padding:2%;
+  border: 1px solid rgba(230, 84, 109, 0.288);
+  border-radius: 20px;
+  padding: 2%;
 }
 
 .fp {
