@@ -18,10 +18,14 @@
   width: 100%;
 }
 #comm {
-  flex-grow: 2;
+  width: 100%;
 }
 .suivre,
 .prec {
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
   color: pink;
   transition: all 0.8s ease-in-out;
 }
@@ -53,4 +57,33 @@
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
   text-decoration: underline;
+}
+#perso {
+  display: flex;
+  justify-content: space-between;
+}
+#perso h2 {
+  min-width: 25%;
+}
+
+.commentaires {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid  rgba(230, 84, 109, 0.288);
+  border-radius:20px;
+  padding:2%;
+}
+
+.fp {
+  font-size: 1.5rem;
+}
+.commentaires img {
+  width: fit-content;
+  height: 80px;
+}
+
+.commentaires > p:last-child {
+  text-align: right;
 }

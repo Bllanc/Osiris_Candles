@@ -13,7 +13,7 @@ $img_fondant_folder = '../res/image/fondant/';
 
 move_uploaded_file($img_fondant_tmp_name, $img_fondant_folder . $img_fondant_name);
 
-$req = $pdo->prepare('INSERT INTO type_fondant  (
+$req = $pdo->prepare('INSERT INTO fondant  (
     nom_fondant, 
     img_fondant, 
     prix_forme_1, poids_forme_1, stock_forme_1, 

@@ -23,17 +23,30 @@ require_once('./bdd/connect_inc.php');
             <div class="prec" onclick="ChangeSlide(-1)">
                 <ion-icon size="large" name="arrow-back"></ion-icon>
             </div>
-
-
-
             <div id="comm">
-                <div> <?php
-                        $req = $pdo->query('SELECT commentaire FROM commentaire ORDER BY note DESC');
-                        foreach ($req as $comm) { ?>
-                        <div class="commentaires">
-                            <p class="commentaire_<?php echo $comm['id_commentaire']; ?>"></p>
-                        </div>
-                    <?php } ?>
+                <div>
+                    <?php
+                    foreach ($pdo->query("SELECT * FROM `utilisateur` WHERE 1") as $key => $row) {
+                        foreach ($pdo->query("SELECT * FROM `commentaire` WHERE id_utilisateur=" . $row['id_utilisateur']) as $key2 => $row2) {
+                            echo "
+                            <div class='commentaires'>
+                                <div id='perso'>
+                                    <h2>" . $row['nom_utilisateur'] . ' ' . $row['prenom_utilisateur'] . "</h2>
+                                    <input type='hidden' value='" . $row['id_utilisateur'] . "' name='id_utilisateur'>
+                                    <img src='" . $path . "/res/img/avatar/" . $row['user_img'] . "' alt='Image'>
+                                    <input type='hidden' value='" . $row['user_img'] . "' name='user_img'>
+                                </div>
+                                <br>
+                                <p class='fp'>" . $row2['commentaire'] . "</p>
+                                <input type='hidden' value='" . $row2['commentaire'] . "' name='commentaire'>
+                                <br>
+                                <p>" . $row2['note'] . "/5</p>
+                                <input type='hidden' value='" . $row2['note'] . "' name='note'>
+                            </div>
+                            ";
+                        }
+                    }
+                    ?>
                 </div>
             </div>
 

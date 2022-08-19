@@ -13,7 +13,7 @@ $img_fiole_folder = '../res/image/fiole/';
 
 move_uploaded_file($img_fiole_tmp_name, $img_fiole_folder . $img_fiole_name);
 
-$req = $pdo->prepare('INSERT INTO type_fiole  (
+$req = $pdo->prepare('INSERT INTO fiole  (
     nom_fiole, 
     img_fiole, 
     prix_fiole, poids_fiole, stock_fiole, 
