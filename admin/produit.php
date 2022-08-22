@@ -136,7 +136,7 @@ require_once('../bdd/connect_inc.php');
                                 <input type="hidden" class="id_fondant_<?php echo $fondant['id_fondant']; ?>" name="id_fondant" value="<?php echo $fondant['id_fondant']; ?>">
                                 <input class="nom_fondant_<?php echo $fondant['id_fondant']; ?>" type="text" name="nom_fondant" disabled value="<?php echo $fondant['nom_fondant']; ?>">
                                 <div class="img_modif">
-                                    <img class="preview_img_fondant_1_<?php echo $fondant['id_fondant']; ?>" style="width: 200px" src="<?php echo $path ?>/res/img/fondant/<?php echo $fondant['img_fondant_1'] ?>">
+                                    <img class="preview_img_fondant_1_<?php echo $fondant['id_fondant']; ?>" style="width: 100%" src="<?php echo $path ?>/res/img/fondant/<?php echo $fondant['img_fondant_1'] ?>">
                                 </div>
                                 <input class="img_fondant_1_<?php echo $fondant['id_fondant']; ?>" type="file" name="img_fondant_1" disabled>
                                 <div style="position:relative;">
