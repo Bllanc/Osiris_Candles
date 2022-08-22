@@ -172,13 +172,13 @@ require_once('../bdd/connect_inc.php');
                     </div>
                 <?php } ?>
                 <div id="form_fondant">
-                    <form method="POST" action="add_fondant_traitement.php" enctype="multipart/form-data">
+                    <form method="POST" action="add_fondant.php" enctype="multipart/form-data">
                         <table>
                             <tr>
                                 <td><textarea type="text" name="nom_fondant" id="nom_fondant" placeholder="Référence du fondant" rows="12"></textarea></td>
                             </tr>
                             <tr>
-                                <td><input type="file" name="ima_fondant" id="img_fondant"></td>
+                                <td><input type="file" name="img_fondant_1" id="img_fondant_1"></td>
                             </tr>
                             <tr>
                                 <td><input type="text" name="parfum_fondant" id="parfum_fondant" placeholder="Parfum"></td>
