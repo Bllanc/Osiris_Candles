@@ -113,7 +113,7 @@ require_once('../bdd/connect_inc.php');
                             <td><input type="text" name="stock_bougie" id="stock_bougie" placeholder="Stock"></td>
                             <td><input type="text" name="promo_bougie" id="promo_bougie" placeholder="Promo"></td>
                             <td><button type="submit">
-                                    <ion-icon size="large" name="paper-plane-outline"></ion-icon>
+                                    <ion-icon class="envoie" size="large" name="paper-plane-outline"></ion-icon>
                                 </button></td>
                         </tr>
                     </table>
@@ -169,7 +169,7 @@ require_once('../bdd/connect_inc.php');
                             <ion-icon class="modif" size="large" name="brush-outline"></ion-icon>
                             <form action="update_fondant.php" method="post">
                                 <input type="hidden" class="id_fondant_<?php echo $fondant['id_fondant']; ?>" name="id_fondant" value="<?php echo $fondant['id_fondant']; ?>">
-                                <ion-icon class="validation" size="large" name="checkmark-outline" style="display:none;"></ion-icon>
+                                <ion-icon id="validation" class="validation" size="large" name="checkmark-outline" style="display:none;"></ion-icon>
                             </form>
 
 
@@ -199,7 +199,7 @@ require_once('../bdd/connect_inc.php');
                             <td><input type="text" name="stock_forme_1" id="stock_forme_1" placeholder="Stock"></td>
                             <td><input type="text" name="promo_fondant" id="promo_fondant" placeholder="Promo"></td>
                             <td><button type="submit">
-                                    <ion-icon size="large" name="paper-plane-outline"></ion-icon>
+                                    <ion-icon class="envoie" size="large" name="paper-plane-outline"></ion-icon>
                                 </button></td>
                         </tr>
                     </table>
@@ -273,7 +273,7 @@ require_once('../bdd/connect_inc.php');
                             <td><input type="text" name="stock_fiole" id="stock_fiole" placeholder="Stock"></td>
                             <td><input type="text" name="promo_fiole" id="promo_fiole" placeholder="Promo"></td>
                             <td><button type="submit">
-                                    <ion-icon size="large" name="paper-plane-outline"></ion-icon>
+                                    <ion-icon class="envoie" size="large" name="paper-plane-outline"></ion-icon>
                                 </button></td>
                         </tr>
                     </table>
@@ -438,7 +438,7 @@ require_once('../bdd/connect_inc.php');
             </div>
         </div>
         <button class="add"><a href="#bougie">
-                <ion-icon size="large" name="arrow-up"></ion-icon>
+                <ion-icon  size="large" name="arrow-up"></ion-icon>
             </a></button>
 
 

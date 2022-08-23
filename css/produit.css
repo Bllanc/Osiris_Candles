@@ -162,6 +162,13 @@ button {
   background: transparent;
 }
 
-#delete {
+#delete,
+#validation {
+  padding: 10%;
+}
+.envoie{
+  background-color: pink;
+  color: white;
+  border-radius: 50%;
   padding: 10%;
 }

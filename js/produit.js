@@ -1,6 +1,6 @@
 $("document").ready(function () {
   $(".modif").click(function () {
-    $(".validation").show();
+    $(".validation").toggle();
   });
   $("#bougie").click(function () {
     $(".bougie").toggle("slow");
@@ -51,4 +51,3 @@ $("document").ready(function () {
     $(".brume").toggle("slow");
   });
 });
-
