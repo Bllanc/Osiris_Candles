@@ -21,16 +21,18 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
 
     <?php require_once '../vue/header.php' ?>
 
+
+
+    <div id="direction">
+        <button id="fio"><img src="<?php echo $path ?>/res/img/fiole.png"></button>
+        <button id="bru"><img src="<?php echo $path ?>/res/img/vaporisateur.png"></button>
+    </div>
+
+    <h1 class="fioH1">Nos Fioles Parfumées</h1>
+    <hr class="fioHr">
     <div class="container">
-
-        <div id="direction">
-            <button id="fio"><img src="<?php echo $path ?>/res/img/fiole.png"></button>
-            <button id="bru"><img src="<?php echo $path ?>/res/img/vaporisateur.png"></button>
-        </div>
-
         <div class="fiole">
-            <h1>Nos Fioles Parfumées</h1>
-            <hr>
+
 
             <?php
             foreach ($pdo->query("SELECT * FROM `fiole` ORDER BY parfum_fiole ASC") as $key => $row) {
@@ -64,10 +66,13 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
 
             ?>
         </div>
+    </div>
 
+
+    <h1 class="bruH1" style="display:none;">Nos Brume Parfumées</h1>
+    <hr class="bruHr">
+    <div class="container">
         <div class="brume" style="display:none;">
-            <h1>Nos Brume Parfumées</h1>
-            <hr>
 
             <?php
             foreach ($pdo->query("SELECT * FROM `brume_parfume` ORDER BY parfum_brume ASC") as $key => $row) {

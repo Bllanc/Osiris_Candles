@@ -22,10 +22,10 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
 
 
     <?php require_once '../vue/header.php' ?>
+
+    <h1>Nos Bougies</h1>
+    <hr>
     <div class="container">
-        <h1>Nos Bougies</h1>
-        <hr>
-        
         <?php
 
         foreach ($pdo->query("SELECT * FROM `bougie` WHERE 1") as $key => $row) {

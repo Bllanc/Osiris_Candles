@@ -43,7 +43,7 @@ require_once('../bdd/connect_inc.php');
                         <input type='hidden' value='" . $row['user_img'] . "' name='user_img'>
                     </div>
                     <br>
-                        <p>" . $row2['commentaire'] . "</p>
+                        <q>" .  $row2['commentaire'] .  "</q>
                         <input type='hidden' value='" . $row2['commentaire'] . "' name='commentaire'>
                     <br>
                         <p>" . $row2['note'] . "/5</p>
@@ -63,7 +63,7 @@ require_once('../bdd/connect_inc.php');
             <form method="POST" action="../bdd/add_commentaire.php">
                 <textarea name="commentaire" rows="10" cols="80" maxlength="255" placeholder="255 caractères max"></textarea>
                 <br>
-                <div name ="note" class="rating">
+                <div name="note" class="rating">
                     <!--
    --><a href="#5" title="Donner 5 étoiles">☆</a>
                     <!--

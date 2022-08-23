@@ -15,7 +15,6 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
     <meta name='viewport' content='width=1000, initial-scale=1'>
     <link rel="icon" href="<?php echo $path ?>/res/img/osiris_candles.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <link rel="stylesheet" href="<?php echo $path ?>/css/card.css">
     <link rel="stylesheet" href="<?php echo $path ?>/css/main.css">
     <link rel="stylesheet" href="<?php echo $path ?>/css/mon_compte.css">
 </head>

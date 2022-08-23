@@ -21,11 +21,11 @@ $('document').ready(function() {
     });
 
     $('#fio').click(function() {
-        $('.brume').hide();
-        $('.fiole').toggle('slow');
+        $('.brume,.bruH1,.bruHr').hide();
+        $('.fiole,.fioH1,.fioHr').toggle('slow');
     })
     $('#bru').click(function() {
-        $('.brume').toggle('slow');
-        $('.fiole').hide();
+        $('.brume,.bruH1,.bruHr').toggle('slow');
+        $('.fiole,.fioH1,.fioHr').hide();
     })
 });

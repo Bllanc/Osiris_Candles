@@ -38,6 +38,8 @@ body::-webkit-scrollbar-thumb {
     background-color: pink;
     border: none;
     padding-top: 1%;
+    width: 11%;
+    margin-top: 2%
 }
 
 .user h2 {

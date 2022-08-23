@@ -37,7 +37,7 @@ require_once('./bdd/connect_inc.php');
                                     <input type='hidden' value='" . $row['user_img'] . "' name='user_img'>
                                 </div>
                                 <br>
-                                <p class='fp'>" . $row2['commentaire'] . "</p>
+                                <q class='fp'>" .  $row2['commentaire'] .  "</q>
                                 <input type='hidden' value='" . $row2['commentaire'] . "' name='commentaire'>
                                 <br>
                                 <p>" . $row2['note'] . "/5</p>

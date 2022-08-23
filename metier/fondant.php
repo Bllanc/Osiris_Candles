@@ -19,9 +19,10 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
 
 <body>
     <?php require_once '../vue/header.php' ?>
+    <h1>Nos Fondants</h1>
+    <hr>
     <div class="container">
-        <h1>Nos Fondants</h1>
-        <hr>
+
 
         <?php
 

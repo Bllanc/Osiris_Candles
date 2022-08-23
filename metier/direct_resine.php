@@ -21,53 +21,45 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
 <body>
     <?php require_once '../vue/header.php' ?>
     <div class="container">
-        <div class="catégorie">
-            <table>
-                <tr>
-                    <td >
-                        <a  href="<?php echo $path ?>/metier/porte_cles.php">
-                            <div id="pc" class="blanc">
-                                <img src="<?php echo $path ?>/res/img/cerf.jpg" alt="Made in France">
-                                <h4>Porte-Clés</h4>
-                            </div>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="<?php echo $path ?>/metier/bougeoire.php">
-                            <div id="boug" class="blanc">
-                                <img src="<?php echo $path ?>/res/img/cerf.jpg" alt="Fait Main">
-                                <h4>Bougeoire</h4>
-                            </div>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="<?php echo $path ?>/metier/stylos.php">
-                            <div id="stylo" class="blanc">
-                                <img src="<?php echo $path ?>/res/img/cerf.jpg" alt="Parfum">
-                                <h4>Stylos</h4>
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="<?php echo $path ?>/metier/divers.php">
-                            <div id="divers" class="blanc">
-                                <img src="<?php echo $path ?>/res/img/cerf.jpg" alt="Parfum">
-                                <h4>Divers</h4>
-                            </div>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="<?php echo $path ?>/metier/fantasie.php">
-                            <div id="fant" class="blanc">
-                                <img src="<?php echo $path ?>/res/img/cerf.jpg" alt="Parfum">
-                                <h4>Fantaisie</h4>
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-            </table>
+        <div>
+            <a href="<?php echo $path ?>/metier/porte_cles.php">
+                <div id="pc" class="blanc">
+                    <img src="<?php echo $path ?>/res/img/cerf.jpg" alt="Made in France">
+                    <h4>Porte-Clés</h4>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="<?php echo $path ?>/metier/bougeoire.php">
+                <div id="boug" class="blanc">
+                    <img src="<?php echo $path ?>/res/img/cerf.jpg" alt="Fait Main">
+                    <h4>Bougeoire</h4>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="<?php echo $path ?>/metier/stylos.php">
+                <div id="stylo" class="blanc">
+                    <img src="<?php echo $path ?>/res/img/cerf.jpg" alt="Parfum">
+                    <h4>Stylos</h4>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="<?php echo $path ?>/metier/divers.php">
+                <div id="divers" class="blanc">
+                    <img src="<?php echo $path ?>/res/img/cerf.jpg" alt="Parfum">
+                    <h4>Divers</h4>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="<?php echo $path ?>/metier/fantasie.php">
+                <div id="fant" class="blanc">
+                    <img src="<?php echo $path ?>/res/img/cerf.jpg" alt="Parfum">
+                    <h4>Fantaisie</h4>
+                </div>
+            </a>
         </div>
     </div>
 
