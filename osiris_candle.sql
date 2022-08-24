@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  jeu. 18 août 2022 à 11:42
+-- Généré le :  mer. 24 août 2022 à 11:30
 -- Version du serveur :  5.7.17
 -- Version de PHP :  5.6.30
 
@@ -96,9 +96,18 @@ CREATE TABLE `brume_parfume` (
 
 CREATE TABLE `commentaire` (
   `id_commentaire` int(11) NOT NULL,
+  `id_utilisateur` int(11) NOT NULL,
   `commentaire` text NOT NULL,
   `note` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `commentaire`
+--
+
+INSERT INTO `commentaire` (`id_commentaire`, `id_utilisateur`, `commentaire`, `note`) VALUES
+(1, 1, 'Premier commentaire pour test l\'affichage et pouvoir mettre le design en place en gros un commentaire de test :)', 3),
+(2, 2, 'Et de 2 juste pour voir ce que sa donne et faire d\'autre test ', 5);
 
 -- --------------------------------------------------------
 
@@ -110,7 +119,7 @@ CREATE TABLE `fiole` (
   `id_fiole` int(11) NOT NULL,
   `nom_fiole` varchar(255) NOT NULL,
   `parfum_fiole` varchar(255) NOT NULL,
-  `img_fiole` text NOT NULL,
+  `img_fiole` text,
   `poids_fiole` int(11) NOT NULL,
   `stock_fiole` int(11) NOT NULL,
   `prix_fiole` float NOT NULL,
@@ -168,14 +177,13 @@ CREATE TABLE `fondant` (
   `stock_forme_1` int(11) NOT NULL,
   `prix_forme_1` float NOT NULL,
   `promo_fondant` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 --
 -- Déchargement des données de la table `fondant`
 --
 
 INSERT INTO `fondant` (`id_fondant`, `nom_fondant`, `parfum_fondant`, `img_fondant_1`, `poids_forme_1`, `stock_forme_1`, `prix_forme_1`, `promo_fondant`) VALUES
-(1, 'fondant Agrumes', 'agrumes', 'fondant_agrumes.png', 15, 1, 2, NULL),
 (2, 'fondant Ambre ', 'ambre', 'fondant_ambre.png', 15, 4, 2, NULL),
 (3, 'fondant Banane', 'banane', 'fondant_banane.png', 15, 5, 2, NULL),
 (4, 'fondant Brioche au beurre', 'brioche au beurre', 'fondant_brioche_au_beurre.png', 15, 0, 2, NULL),
@@ -204,7 +212,8 @@ INSERT INTO `fondant` (`id_fondant`, `nom_fondant`, `parfum_fondant`, `img_fonda
 (27, 'fondant The noir vanille', 'the noir vanille', 'fondant_the_noir_vanille.png', 15, 2, 2, NULL),
 (28, 'fondant Vanille', 'vanille', 'fondant_vanille.png', 15, 1, 2, NULL),
 (29, 'fondant Violette', 'violette', 'fondant_violette.png', 15, 4, 2, NULL),
-(80, 'fondant Aloe vera', 'Aloe Vera', 'fondant_aloe_vera.png', 15, 3, 2, NULL);
+(30, 'fondant Aloe vera', 'Aloe Vera', 'fondant_aloe_vera.png', 15, 3, 2, NULL),
+(31, 'fondant Agrumes', 'Agrumes', 'fondant_agrumes.png', 15, 5, 2, 0);
 
 -- --------------------------------------------------------
 
@@ -228,14 +237,15 @@ CREATE TABLE `utilisateur` (
   `pays` varchar(255) DEFAULT NULL,
   `fidelite` float DEFAULT NULL,
   `user_img` varchar(255) NOT NULL DEFAULT 'f_rose.svg'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 --
 -- Déchargement des données de la table `utilisateur`
 --
 
 INSERT INTO `utilisateur` (`id_utilisateur`, `nom_utilisateur`, `prenom_utilisateur`, `mail_utilisateur`, `motdepasse`, `civilite_utilisateur`, `admin`, `validation`, `tel_utilisateur`, `adresse_utilisateur`, `code_postal`, `ville`, `pays`, `fidelite`, `user_img`) VALUES
-(4, 'Declemy', 'Jade', 'declemyjade@gmail.com', '$2y$10$tDjwRs7PLBQGgHle7k7DFOudVtdCqKDorkkZAaUhwEl5NRj8K3jC.', 'Madame', 1, 1, '0636891425', '650 Chemin Latéral', '62730', 'Les Attaques', 'France', NULL, 'f_rose.svg');
+(1, 'Declemy', 'Jade', 'declemyjade@gmail.com', '$2y$10$tDjwRs7PLBQGgHle7k7DFOudVtdCqKDorkkZAaUhwEl5NRj8K3jC.', 'Madame', 1, 1, '0636891425', '650 Chemin Latéral', '62730', 'Les Attaques', 'France', NULL, 'f_rose.svg'),
+(2, 'Averlan', 'Allan', 'allan.averlan@laposte.net', '$2y$10$9RkuzfKDw0kuyEydqmoMnuAelitQtNUmtiIeVvWFm2OgjL3w8P7qm', NULL, 0, 1, NULL, NULL, NULL, NULL, NULL, NULL, 'h_pirate.svg');
 
 --
 -- Index pour les tables déchargées
@@ -263,7 +273,8 @@ ALTER TABLE `brume_parfume`
 -- Index pour la table `commentaire`
 --
 ALTER TABLE `commentaire`
-  ADD PRIMARY KEY (`id_commentaire`);
+  ADD PRIMARY KEY (`id_commentaire`),
+  ADD KEY `id_utilisateur` (`id_utilisateur`);
 
 --
 -- Index pour la table `fiole`
@@ -301,7 +312,7 @@ ALTER TABLE `brume_parfume`
 -- AUTO_INCREMENT pour la table `commentaire`
 --
 ALTER TABLE `commentaire`
-  MODIFY `id_commentaire` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_commentaire` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT pour la table `fiole`
 --
@@ -311,12 +322,22 @@ ALTER TABLE `fiole`
 -- AUTO_INCREMENT pour la table `fondant`
 --
 ALTER TABLE `fondant`
-  MODIFY `id_fondant` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+  MODIFY `id_fondant` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 --
 -- AUTO_INCREMENT pour la table `utilisateur`
 --
 ALTER TABLE `utilisateur`
-  MODIFY `id_utilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;COMMIT;
+  MODIFY `id_utilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- Contraintes pour les tables déchargées
+--
+
+--
+-- Contraintes pour la table `commentaire`
+--
+ALTER TABLE `commentaire`
+  ADD CONSTRAINT `commentaire_ibfk_1` FOREIGN KEY (`id_utilisateur`) REFERENCES `utilisateur` (`id_utilisateur`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

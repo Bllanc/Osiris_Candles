@@ -1,379 +1,449 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Times, "Times New Roman", Georgia, serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Times, "Times New Roman", Georgia, serif;
 }
 
 body::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    background: pink;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background: pink;
 }
 
 body::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-    background: white;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background: white;
 }
-
+.container {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 5%;
+  margin: 6% auto;
+  gap: 18%;
+  padding: 2%;
+}
 .user {
-    position: relative;
-    width: 90%;
-    height: 100vh;
-    margin: 6% auto;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-    border-radius: 5%
-}
-
-.avatar {
-    position: absolute;
-    top: -140px;
-    left: -50px;
-    border-radius: 50%;
-    background-color: pink;
-    border: none;
-    padding-top: 1%;
-    width: 11%;
-    margin-top: 2%
+  width: 25%;
+  padding: 3%;
 }
 
 .user h2 {
-    position: absolute;
-    top: 2px;
-    left: 175px;
-    font-size: 30px;
+  position: absolute;
+  top: 2px;
+  left: 175px;
+  font-size: 30px;
 }
 
 .user ion-icon {
-    position: absolute;
-    top: -100px;
-    left: 90px;
-    transition: 0.5s;
-    background-color: white;
-    border-radius: 50%;
-    color: pink;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-    padding: 1%;
+  position: absolute;
+  top: -100px;
+  left: 90px;
+  transition: 0.5s;
+  background-color: white;
+  border-radius: 50%;
+  color: pink;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  padding: 1%;
 }
 
 ul a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 ul a:hover {
-    color: white;
+  color: white;
 }
 
 .user ion-icon:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .infos_user ul {
-    padding-top: 11%;
-    padding-left: 1%;
+  width: 100%;
+  padding-top: 11%;
+  padding-left: 1%;
 }
 
 .user li {
-    padding: 1%;
-    position: relative;
-    list-style: none;
-    font-size: 20px;
-    text-align: center;
-    margin: 1%;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-    width: 250px;
-    transition: 0.5s;
-    border-right: 2px solid pink;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  margin: 3%;
+  list-style: none;
+  font-size: 25px;
+  text-align: center;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.5s;
+  border-right: 2px solid pink;
+  width: 100%;
+  min-width: 100%;
 }
 
 .user li:hover {
-    color: white;
-    background-color: pink;
-    transform: scale(1.1);
-    transition: 0.5s;
-    cursor: pointer;
+  color: white;
+  background-color: pink;
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.avatar {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  border-radius: 50%;
+  background-color: pink;
+  border: none;
+  padding-top: 1%;
+  width: 10%;
+  margin-top: 2%;
+}
+#change {
+  position: absolute;
+  top: 250px;
+  left: 185px;
+}
+#change ion-icon {
+  color: white;
+  background: pink;
+  border-radius: 50%;
+  padding: 20%;
+  transition: all 0.8s ease-in-out;
+}
+
+#change ion-icon:hover {
+  color: pink;
+  background: white;
+  transform: scale(1.1);
+  transition: all 0.8s ease-in-out;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
 }
 
 #decon {
-    border: none;
-    background-color: white;
-    transition: 0.5s;
-    font-size: 20px;
-    width: fit-content;
-    height: fit-content;
-    padding: 1%;
+  border: none;
+  background-color: white;
+  transition: 0.5s;
+  font-size: 20px;
+  width: fit-content;
+  height: fit-content;
+  padding: 1%;
+  font-size: 25px;
 }
 
 #decon:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 li:hover #decon {
-    background-color: pink;
-    transition: 0.5s;
+  background-color: pink;
+  transition: 0.5s;
 }
 
 .pink {
-    color: white;
-    background-color: pink;
+  color: white;
+  background-color: pink;
 }
 
 .modal {
-    text-align: center;
-    max-width: 40%;
+  text-align: center;
+  max-width: 70%;
 }
 
 #modal_avatar img {
-    background-color: pink;
-    border-radius: 50%;
-    margin: 40px;
+  width: 10%;
+  background-color: pink;
+  border-radius: 50%;
+  margin: 40px;
 }
 
 #modal_avatar img:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 /* TABLEAU DE BORD */
 
 .content_user {
-    padding: 1%;
-    position: absolute;
-    width: 70%;
-    top: 70px;
-    left: 420px;
-    font-size: 20px;
-    border-radius: 3%;
+  width: 100%;
 }
 
 .content_user a {
-    text-decoration: none;
-    color: black;
-}
-
-.content_user a:hover {
-    text-decoration: underline pink;
-    cursor: pointer;
-}
-
-.content_user #edit_adr:hover {
-    text-decoration: underline pink;
-    cursor: pointer;
-}
-
-.content_user .edit_adr2:hover {
-    text-decoration: underline pink;
-    cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 .content_user #edit {
-    float: right;
+  float: right;
 }
 
-.content_user #edit:hover {
-    text-decoration: underline pink;
-    cursor: pointer;
+.content_user #edit:hover,
+.content_user #edit_adr:hover,
+.content_user .edit_adr2:hover,
+.content_user a:hover,
+#tableau_bord .edit_adr2:hover {
+  text-decoration: underline pink;
+  cursor: pointer;
 }
 
 .content_user #edit_adr {
-    float: right;
+  float: right;
 }
 
 #livr_fact {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 #livraison,
 #facturation {
-    border-spacing: 15px;
+  border-spacing: 15px;
 }
-
-#tableau_bord .edit_adr2:hover {
-    text-decoration: underline pink;
-    cursor: pointer;
-}
-
 
 /* INFORMATIONS DU COMPTE */
 
 #info_compte h3 {
-    text-decoration: underline pink;
+  text-decoration: underline pink;
 }
 
 #info_compte input,
 select {
-    width: 250;
-    height: 30;
-    text-align: center;
+  width: 250;
+  height: 30;
+  text-align: center;
 }
 
 span {
-    color: red;
+  color: red;
 }
 
 #info_compte table {
-    border-spacing: 15px;
+  border-spacing: 15px;
 }
 
 #info_compte a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 #info_compte a:hover {
-    text-decoration: underline pink;
+  text-decoration: underline pink;
 }
 
 #btn_action {
-    position: absolute;
-    width: 90%;
-    bottom: 5%;
-    left: 5%;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+
+  cursor: pointer;
 }
 
 #retour1 {
-    text-align: center;
-    color: white;
-    background-color: pink;
-    width: 150px;
-    height: 20px;
-    cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: pink;
+  width: 150px;
+  height: 20px;
+  cursor: pointer;
 }
 
 #save {
-    float: right;
-    color: white;
-    background-color: pink;
-    width: 150px;
-    height: 20px;
-    cursor: pointer;
+  float: right;
+  color: white;
+  background-color: pink;
+  width: 150px;
+  height: 20px;
+  cursor: pointer;
 }
 
 #obligatoire {
-    display: none;
+  display: none;
 }
-
 
 /* CIVILITE */
 
 #civilite input {
-    width: 100%;
+  width: 100%;
 }
 
 #civilite select {
-    width: 90%;
+  width: 90%;
 }
-
 
 /* CARNET D'ADRESSES */
 
 #carnet_adresse {
-    margin: 2% auto;
-    background-color: white;
-    padding: 2%
+  margin: 2% auto;
+  background-color: white;
+  padding: 2%;
 }
 
 #carnet_adresse h3 {
-    text-decoration: underline pink;
+  text-decoration: underline pink;
 }
 
 #carnet_adresse input {
-    width: 100%;
-    height: 30;
-    text-align: center;
+  width: 100%;
+  height: 30;
+  text-align: center;
 }
 
 #civilite select {
-    width: 90%;
+  width: 90%;
 }
 
 #carnet_adresse table {
-    border-spacing: 15px;
+  border-spacing: 15px;
 }
 
 #carnet_adresse .soc {
-    width: 630;
+  width: 630;
 }
 
 #carnet_adresse h4 {
-    background-color: pink;
-    color: white;
-    border: 1px solid black;
-    padding: 2px;
-    width: 20%;
-    text-align: center;
+  background-color: pink;
+  color: white;
+  border: 1px solid black;
+  padding: 2px;
+  width: 20%;
+  text-align: center;
 }
 
 option {
-    background-color: pink;
-    color: white;
+  background-color: pink;
+  color: white;
 }
 
 #retour2 {
-    text-align: center;
-    color: white;
-    background-color: pink;
-    width: 150px;
-    height: 20px;
-    cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: pink;
+  width: 150px;
+  height: 20px;
+  cursor: pointer;
 }
 
 #save2 {
-    float: right;
-    color: white;
-    background-color: pink;
-    width: 150px;
-    height: 20px;
-    cursor: pointer;
+  float: right;
+  color: white;
+  background-color: pink;
+  width: 150px;
+  height: 20px;
+  cursor: pointer;
 }
-
 
 /* MES COMMANDES */
 
 #mes_commandes {
-    margin: 2% auto;
-    width: 80%;
-    background-color: white;
-    padding: 2%
+  margin: 2% auto;
+  width: 80%;
+  background-color: white;
+  padding: 2%;
 }
 
 #mes_commandes h3 {
-    text-decoration: underline pink;
+  text-decoration: underline pink;
 }
 
 #retour3 {
-    text-align: center;
-    color: white;
-    background-color: pink;
-    width: 150px;
-    height: 20px;
-    cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: pink;
+  width: 150px;
+  height: 20px;
+  cursor: pointer;
 }
 
 #facture-button {
-    padding: 10px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 150%;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 150%;
 }
 
 #retour4 {
-    text-align: center;
-    color: white;
-    background-color: pink;
-    width: 150px;
-    height: 20px;
-    cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: pink;
+  width: 150px;
+  height: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 1650px) {
+  .user {
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  .infos_user {
+    width: 100%;
+  }
+  .infos_user ul {
+    display: inline-flex;
+    width: 15%;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 10%;
+  }
+  .infos_user li,
+  #decon {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 967px) {
+  .user {
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  .infos_user {
+    width: 100%;
+  }
+  .infos_user ul {
+    display: inline-flex;
+    width: 15%;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 10%;
+  }
+  .infos_user li,
+  #decon {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 740px) {
+  .user {
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  .infos_user {
+    width: 100%;
+  }
+  .infos_user ul {
+    display: inline-flex;
+    width: 15%;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 10%;
+  }
+  .infos_user li,
+  #decon {
+    font-size: 12px;
+  }
 }
