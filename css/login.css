@@ -1,74 +1,65 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Times, "Times New Roman", Georgia, serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Times, "Times New Roman", Georgia, serif;
 }
 
 .container {
-    width: 100%;
-    margin: 2% auto;
-    display: inline-flex;
-    justify-content: center;
-    grid-gap: 100px;
+  width: 100%;
+  margin: 2% auto;
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  grid-gap: 100px;
+  gap: 10%;
 }
 
-#conn {
-    border-radius: 8%;
-    border: 3px solid pink;
-    text-align: center;
-    width: 30%;
-    height: 590px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding: 2%;
-    overflow: hidden;
-}
-
+#conn,
 #insc {
-    border-radius: 8%;
-    border: 3px solid pink;
-    text-align: center;
-    width: 30%;
-    height: 590px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding: 2%;
-    overflow: hidden;
+  border-radius: 8%;
+  border: 3px solid pink;
+  text-align: center;
+  width: 40%;
+  height: 590px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 2%;
+  overflow: hidden;
 }
 
 table td {
-    font-size: 16px;
-    font-weight: bold;
-    width: 10%;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
 }
 
 table .send:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 table input {
-    border: none;
-    border-bottom: 1px dashed black;
-    width: 250px;
-    padding: 2%;
+  border: none;
+  border-bottom: 1px dashed black;
+  width: 250px;
+  padding: 2%;
 }
 
 table {
-    border-spacing: 10px 30px;
+  border-spacing: 10px 30px;
 }
 
 .send {
-    border: none;
-    background-color: pink;
-    color: white;
-    font-size: 20px;
-    width: fit-content(10px);
-    padding: 1%;
-    transition: 0.5s;
+  border: none;
+  background-color: pink;
+  color: white;
+  font-size: 20px;
+  width: fit-content(10px);
+  padding: 1%;
+  transition: 0.5s;
 }
 
 .send:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
+  transform: scale(1.1);
+  transition: 0.5s;
 }

@@ -23,7 +23,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
             <div class="dropdown">
                 <button class="dropbtn"><a href="#">Coffrets</a></button>
             </div>
-            <li><img src="<?php echo $path ?>/res/img/osiris_candles.png" alt=""></li>
+            <li id="mid"><img src="<?php echo $path ?>/res/img/osiris_candles.png" alt=""></li>
             <div class="dropdown">
                 <button class="dropbtn"><a href="<?php echo $path ?>/metier/fiole.php">Fiole/Brume parfumé</a></button>
             </div>
