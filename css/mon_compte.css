@@ -393,7 +393,7 @@ option {
   }
   .infos_user ul {
     display: inline-flex;
-    width: 15%;
+    width: 13%;
     flex-direction: row;
     align-items: stretch;
     gap: 10%;
@@ -404,7 +404,7 @@ option {
   }
 }
 
-@media (max-width: 967px) {
+@media (max-width: 991px) {
   .user {
     display: inline-flex;
     flex-flow: row wrap;
@@ -415,7 +415,7 @@ option {
   }
   .infos_user ul {
     display: inline-flex;
-    width: 15%;
+    width: 13%;
     flex-direction: row;
     align-items: stretch;
     gap: 10%;
@@ -426,7 +426,7 @@ option {
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 480px) {
   .user {
     display: inline-flex;
     flex-flow: row wrap;
@@ -437,7 +437,7 @@ option {
   }
   .infos_user ul {
     display: inline-flex;
-    width: 15%;
+    width: 13%;
     flex-direction: row;
     align-items: stretch;
     gap: 10%;

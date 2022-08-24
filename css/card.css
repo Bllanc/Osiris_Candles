@@ -199,13 +199,13 @@ input[type="radio"].demo5:checked + label::after {
   transition: all 0.5s ease-in-out;
 }
 
-@media (max-width: 1200px) {
+@media (max-width:  991px) {
   .card {
     width: 40%;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 480px) {
   .card {
     width: 60%;
   }

@@ -25,29 +25,17 @@ body {
   width: 100%;
 }
 .infos {
+  display: flex;
+  justify-content: space-around;
   text-align: center;
-  position: relative;
   width: 100%;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 25%;
-}
-
-.infos #fr,
-#ffm,
-#pg {
-  text-decoration: none;
-  color: black;
-  transition: 0.8s;
+  padding: 10px;
+  gap: 20%;
 }
 
 .infos #fr:hover,
 #fm:hover,
 #pg:hover {
-  text-decoration: underline black;
-  transform: scale(1.1);
-  transition: 0.8s;
   cursor: default;
 }
 
