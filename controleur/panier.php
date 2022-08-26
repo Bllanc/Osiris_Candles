@@ -43,15 +43,15 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
                                 <p>" . $_SESSION['panier']['article' . $i]['prix'] . " €</p>
                             </div>
                             <div  id='qte' style='display:flex;'>
-                                <p id=''compteur>" . $_SESSION['panier']['article' . $i]['quantite'] . "</p>
+                                <p id='compteur'>" . $_SESSION['panier']['article' . $i]['quantite'] . "</p>
                                 <div>
                                     <div>
-                                        <button class='plus' type='text'>
+                                        <button class='plus' type='text' style='padding-bottom:5px;'>
                                             <ion-icon name='caret-up-outline'></ion-icon>
                                         </button>
                                      </div>
                                     <div>
-                                        <button class='moins' type='text'>
+                                        <button class='moins' type='text'  style='padding-top:5px;'>
                                             <ion-icon name='caret-down-outline'></ion-icon>
                                         </button>
                                          </div>

@@ -147,6 +147,17 @@ span {
   display: flex;
   justify-content: center;
 }
-#rajout{
+#rajout {
   background: transparent;
 }
+#qte {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+#compteur {
+  padding-right: 10px;
+}
+
+
