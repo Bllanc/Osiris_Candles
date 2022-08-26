@@ -47,7 +47,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
             <button class='moins' type='text' name='" . $key . "'>
                 <ion-icon name='remove-outline'></ion-icon>
             </button>
-            <input type='text' value='0' min='0' disabled>
+            <input type='text' value='1' min='0' disabled>
             <button class='plus' type='text' name='" . $key . "'>
                 <ion-icon name='add-outline'></ion-icon>
             </button>
@@ -87,7 +87,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
             <button class='moins' type='text' name='" . $key . "'>
                 <ion-icon name='remove-outline'></ion-icon>
             </button>
-            <input type='text' value='0' min='0' disabled>
+            <input type='text' value='1' min='0' disabled>
             <button class='plus' type='text' name='" . $key . "'>
                 <ion-icon name='add-outline'></ion-icon>
             </button>

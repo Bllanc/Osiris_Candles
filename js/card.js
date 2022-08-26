@@ -15,7 +15,7 @@ $('document').ready(function() {
     $('.fondant_radio').change(function() {
         let id_produit = $(this).attr('id').split('_')[1]; /* recuperation de l'id produit */
         let prix_unite = $('.prix_unit' + id_produit).val(); /* prix à l'unité + id du fondant*/
-        let prix_fin = prix_unite * $(this).val(); /* multiplication du prix par 5 ou 10 selon l'inout choisie*/
+        let prix_fin = prix_unite * $(this).val(); /* multiplication du prix par 5 ou 10 selon l'input choisie*/
         $('.prix_end' + id_produit).val(prix_fin); /* prix final avec la multiplication*/
         $(".prixs" + id_produit).html(prix_fin.toFixed(2) + "€"); /* affichage du prix dans le p */
     });

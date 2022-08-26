@@ -42,8 +42,8 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
                                 <span>" . $_SESSION['panier']['article' . $i]['nom'] . "</span>
                                 <p>" . $_SESSION['panier']['article' . $i]['prix'] . " €</p>
                             </div>
-                            <div style='display:flex;'>
-                                <p>" . $_SESSION['panier']['article' . $i]['quantite'] . "</p>
+                            <div  id='qte' style='display:flex;'>
+                                <p id=''compteur>" . $_SESSION['panier']['article' . $i]['quantite'] . "</p>
                                 <div>
                                     <div>
                                         <button class='plus' type='text'>

@@ -25,7 +25,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
                     <button class="dropbtn"><a href="<?php echo $path ?>/metier/fondant.php">Fondants</a></button>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn"><a href="#">Coffrets</a></button>
+                    <button class="dropbtn"><a href="<?php echo $path ?>/metier/coffret.php">Coffrets</a></button>
                 </div>
                 <li id="mid"><img src="<?php echo $path ?>/res/img/osiris_candles.png" alt=""></li>
                 <div class="dropdown">
@@ -63,7 +63,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
                     <button class="dropbtn"><a href="<?php echo $path ?>/metier/fondant.php">Fondants</a></button>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn"><a href="#">Coffrets</a></button>
+                    <button class="dropbtn"><a href="<?php echo $path ?>/metier/coffret.php">Coffrets</a></button>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn"><a href="<?php echo $path ?>/metier/fiole.php">Fiole/Brume parfumé</a></button>
