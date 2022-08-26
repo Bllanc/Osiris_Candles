@@ -69,23 +69,55 @@ header a {
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
 }
+#button_menu_smartphone {
+  background: pink;
+  color: white;
+}
+#button_menu_smartphone ion-icon {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 1%;
+}
 
-@media (max-width: 991px) {
-  #mid {
-    order: 1;
-  }
-  header {
-    width: 100%;
-  }
-  header .main ul {
-    flex-direction: column;
-    gap: 0;
-    align-items: flex-start;
-  }
-  header .main ul div {
+#menu_smartphone {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: pink;
+}
+#menu_smartphone ul {
+  display: inline-flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 0px !important;
+}
+#menu_smartphone ul div {
+  display: block;
+  padding: 30px;
+}
+
+#menu_smartphone ul div a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+#menu_smartphone ul a:hover {
+  color: white;
+  text-decoration: underline;
+}
+@media screen and (max-width: 910px) {
+  #menu ul {
     display: none;
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (min-width: 911px) {
+  #button_menu_smartphone,
+  #menu_smartphone {
+    display: none;
+  }
 }

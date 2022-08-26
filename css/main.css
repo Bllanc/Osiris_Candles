@@ -21,16 +21,14 @@ body::-webkit-scrollbar-thumb {
   background: white;
 }
 
-body {
-  width: 100%;
-}
 .infos {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  width: 100%;
+  width: 90%;
   padding: 10px;
   gap: 20%;
+  margin: 0 auto;
 }
 
 .infos #fr:hover,
@@ -81,12 +79,13 @@ body {
 .cardBox .card {
   position: relative;
   background-color: white;
-  padding: 30px;
+  padding: 20px;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 7px 25px rgb(0 0 0 / 8%);
+  margin: 0 auto;
 }
 
 .cardBox .card .numbers {

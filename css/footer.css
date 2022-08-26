@@ -1,79 +1,79 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Times, "Times New Roman", Georgia, serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Times, "Times New Roman", Georgia, serif;
 }
 
 footer {
-    padding: 20px;
-    grid-column: span 3;
-    background-color: pink;
-    color: #fff;
-    padding-top: 1%;
-    text-align: center;
+  padding: 20px;
+  grid-column: span 3;
+  background-color: pink;
+  color: #fff;
+  padding-top: 1%;
+  text-align: center;
 }
 
 footer h2 {
-    text-align: center;
+  text-align: center;
 }
 
 footer ion-icon {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 #contenue_footer {
-    margin: 0 auto;
-    color: white;
-    display: inline-flex;
-    justify-content: space-between;
-    text-align: center;
+  margin: 0 auto;
+  color: white;
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 footer ul {
-    display: inline-table;
-    list-style-type: none;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-left: auto;
-    color: white;
+  display: inline-table;
+  list-style-type: none;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  color: white;
 }
 
 footer li {
-    list-style-type: none;
-    display: list-item;
-    margin: 0 12px;
-    margin-bottom: 2px;
-    color: white;
+  list-style-type: none;
+  display: list-item;
+  margin: 0 12px;
+  margin-bottom: 2px;
+  color: white;
 }
 
 footer a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 footer a:hover {
-    text-decoration: underline;
-    color: rgba(230, 84, 108, 0.801);
+  text-decoration: underline;
+  color: rgba(230, 84, 108, 0.801);
 }
 
 .fb img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 #logo a {
-    text-decoration: none;
-    padding-right: 1%
+  text-decoration: none;
+  padding-right: 1%;
 }
 
 .cc {
-    text-align: center;
+  text-align: center;
 }
 
 hr {
-    border: 1px solid rgba(230, 84, 109, 0.288);
-    margin: 10px 0;
+  border: 1px solid rgba(230, 84, 109, 0.288);
+  margin: 10px 0;
 }
