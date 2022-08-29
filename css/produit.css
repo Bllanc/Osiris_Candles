@@ -84,9 +84,10 @@ hr {
   border-radius: 10%;
   width: 19%;
   height: fit-content;
-  display: inline-block;
+  display: inline-flex;
   margin: 2%;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 7px 25px rgb(0 0 0 / 10%);
+  align-items: stretch;
 }
 
 .card_img {
@@ -156,6 +157,11 @@ img {
   display: flex;
   justify-content: space-around;
 }
+.validation {
+  display: inline-flex;
+  justify-content: center;
+  padding:7%;
+}
 
 button {
   border: none;
@@ -166,7 +172,7 @@ button {
 #validation {
   padding: 10%;
 }
-.envoie{
+.envoie {
   background-color: pink;
   color: white;
   border-radius: 50%;

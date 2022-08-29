@@ -109,6 +109,11 @@ body::-webkit-scrollbar-thumb {
   color: pink;
   padding: 3%;
 }
+#info p {
+  display: flex;
+  align-items: center;
+}
+
 #contact a {
   color: pink;
 }
@@ -159,5 +164,3 @@ span {
 #compteur {
   padding-right: 10px;
 }
-
-

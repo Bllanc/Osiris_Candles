@@ -113,7 +113,7 @@ require_once('../bdd/connect_inc.php');
                             <td><input type="text" name="stock_bougie" id="stock_bougie" placeholder="Stock"></td>
                             <td><input type="text" name="promo_bougie" id="promo_bougie" placeholder="Promo"></td>
                             <td><button type="submit">
-                                    <ion-icon class="envoie" size="large" name="paper-plane-outline"></ion-icon>
+                                    <ion-icon size="large" name="paper-plane-outline"></ion-icon>
                                 </button></td>
                         </tr>
                     </table>
@@ -132,11 +132,12 @@ require_once('../bdd/connect_inc.php');
             foreach ($req as $fondant) { ?>
                 <div class="card">
                     <div id="modif">
-                        <form class="modif" name="<?php echo $fondant['id_fondant']; ?>" enctype="multipart/form-data">
+                        <form class="modif" name="<?php echo $fondant['id_fondant']; ?>" action="update_fondant.php" method="POST" enctype="multipart/form-data">
                             <input type="hidden" class="id_fondant_<?php echo $fondant['id_fondant']; ?>" name="id_fondant" value="<?php echo $fondant['id_fondant']; ?>">
-                            <input class="nom_fondant_<?php echo $fondant['id_fondant']; ?>" type="text" name="nom_fondant" disabled value="<?php echo $fondant['nom_fondant']; ?>">
+                            <input class="nom_fondant_<?php echo $fondant['id_fondant']; ?>" type="text" name="nom_fondant" value="<?php echo $fondant['nom_fondant']; ?>" disabled>
+                            <input class="parfum_fondant_<?php echo $fondant['id_fondant']; ?>" type="hidden" name="parfum_fondant" value="<?php echo $fondant['parfum_fondant']; ?>">
                             <div class="img_modif">
-                                <img class="preview_img_fondant_1_<?php echo $fondant['id_fondant']; ?>" style="width: 100%" src="<?php echo $path ?>/res/img/fondant/<?php echo $fondant['img_fondant_1'] ?>">
+                                <img class="img_fondant_1_<?php echo $fondant['id_fondant']; ?>" style="width: 100%" src="<?php echo $path ?>/res/img/fondant/<?php echo $fondant['img_fondant_1'] ?>">
                             </div>
                             <input class="img_fondant_1_<?php echo $fondant['id_fondant']; ?>" type="file" name="img_fondant_1" disabled>
                             <div style="position:relative;">
@@ -159,19 +160,14 @@ require_once('../bdd/connect_inc.php');
                                 <div style="position:absolute;left:2px;top:10px;">Promo</div>
                                 <input class="promo_fondant_<?php echo $fondant['id_fondant']; ?>" type="text" name="promo_fondant" value="<?php echo $fondant['promo_fondant']; ?>" disabled>
                             </div>
-                            <button id="valid_<?php echo $fondant['id_fondant']; ?>" type="submit" style="display:none;">
+                            <button class="validation" id="valid_<?php echo $fondant['id_fondant']; ?>" type="submit" style="display:none;">
                                 <ion-icon size="large" name="checkmark-outline"></ion-icon>
                             </button>
                             <br>
 
                         </form>
-                        <div class="task">
-                            <ion-icon class="modif" size="large" name="brush-outline"></ion-icon>
-                            <form action="update_fondant.php" method="post">
-                                <input type="hidden" class="id_fondant_<?php echo $fondant['id_fondant']; ?>" name="id_fondant" value="<?php echo $fondant['id_fondant']; ?>">
-                                <ion-icon id="validation" class="validation" size="large" name="checkmark-outline" style="display:none;"></ion-icon>
-                            </form>
-
+                        <div class="task" id="task_<?php echo $fondant['id_fondant']; ?>" >
+                            <ion-icon class="brush" size="large" name="brush-outline" id="<?php echo $fondant['id_fondant']; ?>"></ion-icon>
 
                             <form method="post" action="del_fondant.php" class="trash" name="<?php echo $fondant['id_fondant']; ?>">
                                 <button class="trash" type="submit">
@@ -179,6 +175,7 @@ require_once('../bdd/connect_inc.php');
                                     <ion-icon id="delete" class="delete" size="large" name="trash-bin-outline"></ion-icon>
                                 </button>
                             </form>
+
                         </div>
                     </div>
                 </div>
@@ -199,7 +196,7 @@ require_once('../bdd/connect_inc.php');
                             <td><input type="text" name="stock_forme_1" id="stock_forme_1" placeholder="Stock"></td>
                             <td><input type="text" name="promo_fondant" id="promo_fondant" placeholder="Promo"></td>
                             <td><button type="submit">
-                                    <ion-icon class="envoie" size="large" name="paper-plane-outline"></ion-icon>
+                                    <ion-icon size="large" name="paper-plane-outline"></ion-icon>
                                 </button></td>
                         </tr>
                     </table>
@@ -273,7 +270,7 @@ require_once('../bdd/connect_inc.php');
                             <td><input type="text" name="stock_fiole" id="stock_fiole" placeholder="Stock"></td>
                             <td><input type="text" name="promo_fiole" id="promo_fiole" placeholder="Promo"></td>
                             <td><button type="submit">
-                                    <ion-icon class="envoie" size="large" name="paper-plane-outline"></ion-icon>
+                                    <ion-icon size="large" name="paper-plane-outline"></ion-icon>
                                 </button></td>
                         </tr>
                     </table>
@@ -438,7 +435,7 @@ require_once('../bdd/connect_inc.php');
             </div>
         </div>
         <button class="add"><a href="#bougie">
-                <ion-icon  size="large" name="arrow-up"></ion-icon>
+                <ion-icon size="large" name="arrow-up"></ion-icon>
             </a></button>
 
 
