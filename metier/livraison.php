@@ -26,6 +26,12 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
 
     <body>
         <?php require_once '../vue/header.php' ?>
+        <div class="navigation">
+            <p>
+                <a href="<?php echo $path ?>/index.php">Accueil →</a>
+                <span>  Livraison </span>
+            </p>
+        </div>
 
 
 

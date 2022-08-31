@@ -16,13 +16,6 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
     <div class="sur_footer">
 
         <div class="infos_sur">
-            <a href="<?php echo $path ?>/metier/retour.php">
-                <ion-icon size="large" name="time-outline"></ion-icon>
-                <br>
-                <p>Retour gratuit sous 2 Mois</p>
-            </a>
-        </div>
-        <div class="infos_sur">
             <a href="<?php echo $path ?>/metier/livraison.php">
                 <ion-icon size="large" name="airplane-outline" id="avion"></ion-icon>
                 <br>
@@ -33,7 +26,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
             <a href="<?php echo $path ?>/metier/retour.php">
                 <ion-icon size="large" name="time-outline"></ion-icon>
                 <br>
-                <p>Retour gratuit sous 2 Mois</p>
+                <p>Retour gratuit sous 2 Semaines</p>
             </a>
         </div>
         </a>
