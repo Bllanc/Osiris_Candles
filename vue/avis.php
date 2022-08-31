@@ -17,12 +17,10 @@ require_once('./bdd/connect_inc.php');
 <body>
 
 
-    <div  class="slideshow-container">
+    <div class="slideshow-container">
 
         <div class="slider">
-            <div class="prec" onclick="ChangeSlide(-1)">
-                <ion-icon size="large" name="arrow-back"></ion-icon>
-            </div>
+
             <div id="comm">
                 <div>
                     <?php
@@ -51,10 +49,6 @@ require_once('./bdd/connect_inc.php');
             </div>
 
 
-
-            <div class="suivre" onclick="ChangeSlide(1)">
-                <ion-icon size="large" name="arrow-forward"></ion-icon>
-            </div>
         </div>
         <div id="write_com">
             <a href="<?php echo $path ?>/controleur/commentaire.php">Donner votre avis</a>

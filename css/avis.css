@@ -6,11 +6,11 @@
 }
 
 .slideshow-container {
-  width: 95%;
-  margin: 2% auto;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
   border-radius: 20px;
   padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .slider {
@@ -20,21 +20,6 @@
 }
 #comm {
   width: 100%;
-}
-.suivre,
-.prec {
-  display: flex;
-  align-items: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  color: pink;
-  transition: all 0.8s ease-in-out;
-}
-.suivre:hover,
-.prec:hover {
-  color: rgba(230, 84, 108, 0.647);
-  transform: scale(1.2);
-  transition: all 0.8s ease-in-out;
 }
 
 #write_com {
@@ -70,6 +55,7 @@
   width: 50%;
   margin: 0 auto;
   border: 1px solid rgba(230, 84, 109, 0.288);
+  box-shadow: 0 7px 25px rgb(0 0 0 / 20%);
   border-radius: 20px;
   padding: 2%;
 }

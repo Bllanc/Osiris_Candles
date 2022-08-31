@@ -79,14 +79,9 @@ require_once('../bdd/connect_inc.php');
             </form>
         </div>
     </div>
+    
+    <?php require_once './vue/sur_footer.php' ?>
     <?php require_once '../vue/footer.php' ?>
-
-
-
-
-
-
-
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>
     <script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
