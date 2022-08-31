@@ -1,11 +1,13 @@
-let slide = new Array("foret-peuplier.jpg", "paysage-montagne.jpg", "chemin-automne.jpg", "prairie-alpes.jpg");
-let numero = 0;
+let slideIndex = 0;
+showSlides();
 
-function ChangeSlide(sens) {
-    numero = numero + sens;
-    if (numero < 0)
-        numero = slide.length - 1;
-    if (numero > slide.length - 1)
-        numero = 0;
-    document.getElementById("comm").src = slide[numero];
+function showSlides() {
+  let slides = document.getElementsByClassName("mySlides"); // Mise de l'élément en variable 
+  for (i = 0; i < slides.length; i++) { // Pour  i = 0, tant que i est inf à la longueur des slides
+    slides[i].style.display = "none"; // alors on affiche rien
+  }
+  slideIndex++; // Incrémentation du nombre de Slide
+  if (slideIndex > slides.length) {slideIndex = 1}  // Si slideIndex et sup à la longueur des slides , slideIndex=1
+  slides[slideIndex-1].style.display = "block"; // Alors on fait appaitre 
+  setTimeout(showSlides, 8000); // Change l'image toutes les 8 secondes
 }

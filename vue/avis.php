@@ -17,7 +17,7 @@ require_once('./bdd/connect_inc.php');
 <body>
 
 
-    <div id="avis">
+    <div  class="slideshow-container">
 
         <div class="slider">
             <div class="prec" onclick="ChangeSlide(-1)">
@@ -29,7 +29,7 @@ require_once('./bdd/connect_inc.php');
                     foreach ($pdo->query("SELECT * FROM `utilisateur` WHERE 1") as $key => $row) {
                         foreach ($pdo->query("SELECT * FROM `commentaire` WHERE id_utilisateur=" . $row['id_utilisateur']) as $key2 => $row2) {
                             echo "
-                            <div class='commentaires'>
+                            <div class='mySlides fade'>
                                 <div id='perso'>
                                     <h2>" . $row['nom_utilisateur'] . ' ' . $row['prenom_utilisateur'] . "</h2>
                                     <input type='hidden' value='" . $row['id_utilisateur'] . "' name='id_utilisateur'>

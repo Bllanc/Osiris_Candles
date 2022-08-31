@@ -115,7 +115,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
                         <ion-icon size="large" name="card-outline"></ion-icon> Paiement Sécurisé.
                     </p>
                     <p>
-                        <ion-icon size="large" name="calendar-number-outline"></ion-icon> Expédié en 48h Maximum.
+                        <ion-icon size="large" name="calendar-number-outline"></ion-icon> Expédié en 72h Maximum.
                     </p>
                     <p></p>
                 </div>
