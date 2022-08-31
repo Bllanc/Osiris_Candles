@@ -16,21 +16,21 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
     <div class="sur_footer">
 
         <div class="infos_sur">
-            <a href="">
+            <a href="<?php echo $path ?>/metier/retour.php">
                 <ion-icon size="large" name="time-outline"></ion-icon>
                 <br>
                 <p>Retour gratuit sous 2 Mois</p>
             </a>
         </div>
         <div class="infos_sur">
-            <a href="">
+            <a href="<?php echo $path ?>/metier/livraison.php">
                 <ion-icon size="large" name="airplane-outline" id="avion"></ion-icon>
                 <br>
                 <p>Livraison gratuite des 49€</p>
             </a>
         </div>
         <div class="infos_sur">
-            <a href="">
+            <a href="<?php echo $path ?>/metier/retour.php">
                 <ion-icon size="large" name="time-outline"></ion-icon>
                 <br>
                 <p>Retour gratuit sous 2 Mois</p>
@@ -38,7 +38,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
         </div>
         </a>
         <div class="infos_sur">
-            <a href="">
+            <a href="<?php echo $path ?>/metier/fidelite.php">
                 <ion-icon size="large" name="ribbon-outline"></ion-icon>
                 <br>
                 <p>Des Points de Fidélité</p>
