@@ -2,6 +2,10 @@ section {
   margin-top: 2%;
   margin-bottom: 2%;
 }
+#infliv{
+  text-align: center;
+  font-size:12px;
+}
 .sur_footer {
   display: flex;
   justify-content: center;

@@ -5,22 +5,6 @@
   font-family: Times, "Times New Roman", Georgia, serif;
 }
 
-body::-webkit-scrollbar {
-  width: 12px;
-}
-
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  background: pink;
-}
-
-body::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-  background: white;
-}
-
 .infos {
   display: flex;
   justify-content: space-around;
@@ -35,6 +19,30 @@ body::-webkit-scrollbar-thumb {
 #fm:hover,
 #pg:hover {
   cursor: default;
+}
+
+#presentation {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  width: 100%;
+  box-shadow: 0 7px 25px rgb(0 0 0 / 20%);
+  border-radius:8px;
+}
+#preText {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  height: 500px;
+  padding: 2%;
+  text-align: justify;
+  font-size: medium;
+}
+#preImg {
+  width: 70%;
+}
+#preImg img {
+  height: 500px;
 }
 
 .box {

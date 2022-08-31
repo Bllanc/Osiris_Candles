@@ -19,21 +19,21 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
             <a href="">
                 <ion-icon size="large" name="time-outline"></ion-icon>
                 <br>
-                <span>Retour gratuit sous 2 Mois</span>
+                <p>Retour gratuit sous 2 Mois</p>
             </a>
         </div>
         <div class="infos_sur">
             <a href="">
                 <ion-icon size="large" name="airplane-outline" id="avion"></ion-icon>
                 <br>
-                <span>Livraison gratuite des 49€</span>
+                <p>Livraison gratuite des 49€</p>
             </a>
         </div>
         <div class="infos_sur">
             <a href="">
                 <ion-icon size="large" name="time-outline"></ion-icon>
                 <br>
-                <span>Retour gratuit sous 2 Mois</span>
+                <p>Retour gratuit sous 2 Mois</p>
             </a>
         </div>
         </a>
@@ -41,11 +41,12 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
             <a href="">
                 <ion-icon size="large" name="ribbon-outline"></ion-icon>
                 <br>
-                <span>Des Points de Fidélité</span>
+                <p>Des Points de Fidélité</p>
             </a>
         </div>
 
     </div>
+    <p id="infliv">(*Livraison à domicile offerte en France métropolitaine pour toute commande d'un montant supérieur à 49€ (hors Chronopost). Offre valable uniquement sur les produits disponibles à la vente en ligne dans la limite des stocks disponibles.)</p>
     <hr>
 </section>
 

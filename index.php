@@ -39,6 +39,21 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
                 <h4>Parfum de Grasse</h4>
             </div>
         </div>
+        <div id="presentation">
+            <div id="preText">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, officiis neque cumque consectetur optio tempora accusamus fugiat aut sequi facere amet adipisci eaque ipsum natus excepturi impedit possimus libero aliquid!
+                    Earum velit quisquam architecto, reprehenderit sequi animi ad necessitatibus enim fuga facere. Eaque iure, delectus hic soluta maxime aspernatur reiciendis consectetur accusamus quos suscipit similique, voluptates ab! Similique, odio earum.
+                    Rem vitae voluptas optio officiis animi, consectetur, iusto obcaecati consequuntur distinctio suscipit sit expedita. Tenetur officiis autem commodi nam? Beatae blanditiis totam corrupti nemo, adipisci maxime dolore molestias delectus voluptatibus?
+                    Dolor, unde deleniti adipisci voluptatibus omnis quod dignissimos suscipit sed ea a nemo explicabo veniam fugiat, laudantium ipsa officiis corrupti necessitatibus totam. Adipisci explicabo voluptatem facilis blanditiis tempore tempora alias.
+                    Numquam, repellat distinctio. Consequatur provident delectus consequuntur fuga aliquid aut recusandae reprehenderit alias, cum error, pariatur nulla. Nostrum sapiente molestias perferendis praesentium, ad repudiandae animi aperiam temporibus. Minus, mollitia consequuntur.
+                    Adipisci libero optio quia quae doloremque. Dolor beatae unde expedita laborum animi. Vero fugit inventore corporis temporibus ipsa voluptatibus, minima est aliquam architecto soluta tempore numquam corrupti magni nisi quo.
+                    Molestias quos beatae rem, libero odit expedita velit ea, delectus, sunt ratione atque saepe quaerat iure tempore eveniet facere laboriosam aut qui repellat possimus quod consectetur numquam. Magnam, aut saepe!
+                    Tempore dolore consequatur adipisci? Delectus id iste harum eaque ea, accusamus atque quisquam inventore aperiam quidem ipsum veniam rem reiciendis voluptate totam tempore aliquid quaerat laboriosam sapiente non. Totam, neque?</p>
+            </div>
+            <div id="preImg">
+                <img src="<?php echo $path ?>/res/img/bougies-parfumees-fait-maison.png" width="100%" alt="Fait Main">
+            </div>
+        </div>
         <br>
         <h1>Notre Sélection</h1>
         <div class="cardBox">
