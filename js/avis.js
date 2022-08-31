@@ -9,5 +9,5 @@ function showSlides() {
   slideIndex++; // Incrémentation du nombre de Slide
   if (slideIndex > slides.length) {slideIndex = 1}  // Si slideIndex et sup à la longueur des slides , slideIndex=1
   slides[slideIndex-1].style.display = "block"; // Alors on fait appaitre 
-  setTimeout(showSlides, 8000); // Change l'image toutes les 8 secondes
+  setTimeout(showSlides, 5000); // Change l'image toutes les 5 secondes
 }
