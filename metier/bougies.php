@@ -24,6 +24,9 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
     <?php require_once '../vue/header.php' ?>
 
     <h1>Nos Bougies</h1>
+    <div class="mess">
+        <i>Lors d'un moment spécial, pour offrir ou juste pour se détendre les bougies parfumées sont géniales pour retrouver un petit moment de convivialité à partager.</i>
+    </div>
     <hr>
     <div class="container">
         <?php

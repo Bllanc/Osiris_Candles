@@ -26,9 +26,10 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
     <div class="navigation">
         <p>
             <a href="<?php echo $path ?>/index.php">Accueil →</a>
-           <span>  Fidélié </span>
+            <span> Fidélié </span>
         </p>
     </div>
+    <div class="container"></div>
 
 
 
