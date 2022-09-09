@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: Times, "Times New Roman", Georgia, serif;
 }
+body {
+  background: whitesmoke;
+}
 #vosComs {
   width: 95%;
   margin: 2% auto;
@@ -15,18 +18,18 @@
 #vosComs > div {
   width: 20%;
   padding: 1%;
-  border: 1px solid pink;
+  border: 1px solid #f6d1d8;
   border-radius: 20px;
   box-shadow: 10px 7px 11px 5px rgb(0 0 0 / 15%);
   transition: all 0.8s ease-in-out;
 }
-#vosComs > div:hover{
+#vosComs > div:hover {
   transform: scale(1.1);
   transition: all 0.8s ease-in-out;
 }
 #vosComs h2 {
   padding: 1%;
-  flex-grow:2 ;
+  flex-grow: 2;
 }
 #vosComs img {
   width: 30%;

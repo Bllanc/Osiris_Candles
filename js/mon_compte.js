@@ -1,64 +1,64 @@
 $("#tab_bord,#retour1,#retour2,#retour3").click(function() {
     $("#bord").show();
-    $("#tab_bord").addClass("pink");
+    $("#tab_bord").addClass("#f6d1d8");
     $("#info_compte,#retour1,#save,#obligatoire").hide();
-    $("#infos_compte").removeClass("pink");
+    $("#infos_compte").removeClass("#f6d1d8");
     $("#carnet_adresse,#retour2,#save2,#obligatoire2").hide();
-    $("#adresse").removeClass("pink");
+    $("#adresse").removeClass("#f6d1d8");
     $("#mes_commandes,#retour3").hide();
-    $("#commande").removeClass("pink");
+    $("#commande").removeClass("#f6d1d8");
     $("#fidelite,#retour4").hide();
-    $('#fidel').removeClass("pink");
+    $('#fidel').removeClass("#f6d1d8");
 });
 
 $("#infos_compte, #edit").click(function() {
     $("#info_compte,#retour1,#save,#obligatoire").show();
-    $("#infos_compte").addClass("pink");
+    $("#infos_compte").addClass("#f6d1d8");
     $("#bord").hide();
-    $("#tab_bord").removeClass("pink");
+    $("#tab_bord").removeClass("#f6d1d8");
     $("#carnet_adresse,#retour2,#save2,#obligatoire2").hide();
-    $("#adresse").removeClass("pink");
+    $("#adresse").removeClass("#f6d1d8");
     $("#mes_commandes,#retour3").hide();
-    $("#commande").removeClass("pink");
+    $("#commande").removeClass("#f6d1d8");
     $("#fidelite,#retour4").hide();
-    $('#fidel').removeClass("pink");
+    $('#fidel').removeClass("#f6d1d8");
 });
 
 $("#adresse,#edit_adr, .edit_adr2").click(function() {
     $("#carnet_adresse,#retour2,#save2,#obligatoire2").show();
-    $("#adresse").addClass("pink");
+    $("#adresse").addClass("#f6d1d8");
     $("#bord").hide();
-    $("#tab_bord").removeClass("pink");
+    $("#tab_bord").removeClass("#f6d1d8");
     $("#info_compte,#retour1,#save,#obligatoire").hide();
-    $("#infos_compte").removeClass("pink");
+    $("#infos_compte").removeClass("#f6d1d8");
     $("#mes_commandes,#retour3").hide();
-    $("#commande").removeClass("pink");
+    $("#commande").removeClass("#f6d1d8");
     $("#fidelite,#retour4").hide();
-    $('#fidel').removeClass("pink");
+    $('#fidel').removeClass("#f6d1d8");
 });
 $("#commande").click(function() {
     $("#mes_commandes,#retour3").show();
-    $("#commande").addClass("pink");
+    $("#commande").addClass("#f6d1d8");
     $("#bord").hide();
-    $("#tab_bord").removeClass("pink");
+    $("#tab_bord").removeClass("#f6d1d8");
     $("#info_compte,#retour1,#save,#obligatoire").hide();
-    $("#infos_compte").removeClass("pink");
+    $("#infos_compte").removeClass("#f6d1d8");
     $("#carnet_adresse,#retour2,#save2,#obligatoire2").hide();
-    $("#adresse").removeClass("pink");
+    $("#adresse").removeClass("#f6d1d8");
     $("#fidelite,#retour4").hide();
-    $('#fidel').removeClass("pink");
+    $('#fidel').removeClass("#f6d1d8");
 });
 
 $("#fidel").click(function() {
     $("#fidelite,#retour4").show();
-    $("#fidel").addClass("pink");
+    $("#fidel").addClass("#f6d1d8");
     $("#bord").hide();
-    $("#tab_bord").removeClass("pink");
+    $("#tab_bord").removeClass("#f6d1d8");
     $("#info_compte,#retour1,#save,#obligatoire").hide();
-    $("#infos_compte").removeClass("pink");
+    $("#infos_compte").removeClass("#f6d1d8");
     $("#carnet_adresse,#retour2,#save2,#obligatoire2").hide();
-    $("#adresse").removeClass("pink");
-    $("#infos_compte").removeClass("pink");
+    $("#adresse").removeClass("#f6d1d8");
+    $("#infos_compte").removeClass("#f6d1d8");
     $("#mes_commandes,#retour3").hide();
 });
 

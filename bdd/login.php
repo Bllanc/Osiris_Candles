@@ -52,7 +52,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3"><input class="send" type="submit" value="Se connecter"></td>
+                        <td colspan="3"><input class="send send-wiggle" type="submit" value="Se connecter"></td>
                     </tr>
                 </table>
             </form>
@@ -95,7 +95,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
                         }?></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input class="send" type="submit" value="S'inscrire"></td>
+                        <td colspan="2"><input class="send send-wiggle" type="submit" value="S'inscrire"></td>
                     </tr>
                 </table>
             </form>

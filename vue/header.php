@@ -16,7 +16,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
             </div>
             <ul>
                 <div class="dropdown">
-                    <a href="<?php echo $path ?>/index.php"><button class="dropbtn">Accueil</button></a>
+                    <button class="dropbtn"> <a href="<?php echo $path ?>/index.php">Accueil</button></a>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn"> <a href="<?php echo $path ?>/metier/bougies.php">Bougies</a></button>

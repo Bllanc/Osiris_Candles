@@ -4,12 +4,15 @@
   box-sizing: border-box;
   font-family: Times, "Times New Roman", Georgia, serif;
 }
+body {
+  background: whitesmoke;
+}
 .navigation {
   margin-top: 2%;
   padding: 2%;
 }
 .navigation p {
-  color: pink;
+  color: #f6d1d8;
 }
 span {
   text-decoration: underline;
@@ -18,7 +21,7 @@ span {
 
 .navigation a {
   text-decoration: none;
-  color: pink;
+  color: #f6d1d8;
 }
 
 .container {

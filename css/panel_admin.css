@@ -7,6 +7,7 @@
 
 body {
   min-height: 100vh;
+  background: whitesmoke;
 }
 
 .container {
@@ -18,8 +19,8 @@ body {
   position: fixed;
   width: 300px;
   height: 100%;
-  background-color: pink;
-  border-left: 10px solid pink;
+  background-color: #f6d1d8;
+  border-left: 10px solid #f6d1d8;
   transition: 0.5s;
   overflow: hidden;
 }
@@ -64,7 +65,7 @@ body {
 
 .navigation ul li:hover a,
 .navigation ul li.hovered a {
-  color: pink;
+  color: #f6d1d8;
 }
 
 .navigation ul li a .icon {
@@ -231,7 +232,7 @@ body {
   position: relative;
   font-weight: 500;
   font-size: 2.5em;
-  color: pink;
+  color: #f6d1d8;
 }
 
 .cardBox .card .cardName {
@@ -246,7 +247,7 @@ body {
 }
 
 .cardBox .card:hover {
-  background-color: pink;
+  background-color: #f6d1d8;
 }
 
 .cardBox .card:hover .numbers,
@@ -282,13 +283,13 @@ body {
 
 .cardHeader h2 {
   font-weight: 600;
-  color: pink;
+  color: #f6d1d8;
 }
 
 .btn {
   position: relative;
   padding: 5px 10px;
-  background-color: pink;
+  background-color: #f6d1d8;
   text-decoration: none;
   color: white;
   border-radius: 6px;
@@ -314,7 +315,7 @@ body {
 }
 
 .detail .recentOrders table tbody tr:hover {
-  background-color: pink;
+  background-color: #f6d1d8;
   color: white;
 }
 

@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: Times, "Times New Roman", Georgia, serif;
 }
+body {
+  background: whitesmoke;
+}
 
 a {
   text-decoration: none;
@@ -29,7 +32,7 @@ a {
   text-align: center;
   margin: 1%;
   padding: 1%;
-  color: pink;
+  color: #f6d1d8;
   text-decoration: underline;
 }
 
@@ -50,11 +53,11 @@ a {
   flex-direction: row;
   margin: 2%;
   padding: 2%;
-  border-bottom: 1px solid pink;
+  border-bottom: 1px solid #f6d1d8;
 }
 .article ion-icon {
   border-radius: 50%;
-  background: pink;
+  background: #f6d1d8;
   color: white;
   padding: 5%;
 }
@@ -91,7 +94,7 @@ a {
   height: fit-content;
   box-shadow: 0 0 6px rgb(0 0 0 / 50%);
   border-radius: 10px;
-  color: pink;
+  color: #f6d1d8;
   padding: 3%;
 }
 #info p {
@@ -100,12 +103,12 @@ a {
 }
 
 #contact a {
-  color: pink;
+  color: #f6d1d8;
 }
 #valid_panier,
 #clear_panier,
 #rajout button {
-  background: pink;
+  background: #f6d1d8;
   color: white;
   border: none;
   padding: 1%;

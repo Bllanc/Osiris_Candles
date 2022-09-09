@@ -12,7 +12,7 @@ header {
 
 header .main ul {
   width: 100%;
-  background-color: pink;
+  background-color: #f6d1d8;
   display: inline-flex;
   justify-content: space-around;
   text-align: center;
@@ -47,7 +47,7 @@ header a {
 }
 
 .dropbtn {
-  background-color: pink;
+  background-color: #f6d1d8;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -59,18 +59,21 @@ header a {
   position: relative;
   display: inline-block;
 }
+.dropdown:hover a {
+  color: grey ;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .dropbtn:hover {
-  background-color: rgba(230, 84, 109, 0.288);
+  background-color: #ffefff;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
 }
 #button_menu_smartphone {
-  background: pink;
+  background: #f6d1d8;
   color: white;
 }
 #button_menu_smartphone ion-icon {
@@ -86,7 +89,7 @@ header a {
   right: 0;
   width: 250px;
   height: 100%;
-  background-color: pink;
+  background-color: #f6d1d8;
 }
 #menu_smartphone ul {
   display: inline-flex;

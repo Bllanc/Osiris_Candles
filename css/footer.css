@@ -8,7 +8,7 @@
 footer {
   padding: 20px;
   grid-column: span 3;
-  background-color: pink;
+  background-color: #f6d1d8;
   color: #fff;
   padding-top: 1%;
   text-align: center;
@@ -74,6 +74,7 @@ footer a:hover {
 }
 
 hr {
-  border: 1px solid rgba(230, 84, 109, 0.288);
+  border: 1px solid #ffefff;
+  box-shadow: 0 3px 6px black;
   margin: 10px 0;
 }
