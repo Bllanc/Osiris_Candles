@@ -25,20 +25,14 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
     <?php require_once './vue/header.php' ?>
 
     <div class="container">
-        <div class="infos">
-            <div class="box" id="fr">
-                <img src="<?php echo $path ?>/res/img/france.png" alt="Made in France">
-                <h4>Fabrication Française</h4>
-            </div>
-            <div class="box" id="fm">
-                <img src="<?php echo $path ?>/res/img/hand-made.png" alt="Fait Main">
-                <h4>Fait Main</h4>
-            </div>
-            <div class="box" id="pg">
-                <img src="<?php echo $path ?>/res/img/parfume.png" alt="Parfum">
-                <h4>Parfum de Grasse</h4>
+
+        <div class="marquee-rtl">
+            <div>
+                <p>Les calendrier de l'avent son disponible a la pré-commande</p>
             </div>
         </div>
+
+
         <div id="presentation">
             <div id="preText">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, officiis neque cumque consectetur optio tempora accusamus fugiat aut sequi facere amet adipisci eaque ipsum natus excepturi impedit possimus libero aliquid!
@@ -55,8 +49,20 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
                 <img src="<?php echo $path ?>/res/img/bougies-parfumees-fait-maison.png" width="100%" alt="Fait Main">
             </div>
         </div>
-        <br>
-        <h1>Notre Sélection</h1>
+        <div class="infos">
+            <div class="box" id="fr">
+                <img src="<?php echo $path ?>/res/img/france.png" alt="Made in France">
+                <h4>Fabrication Française</h4>
+            </div>
+            <div class="box" id="fm">
+                <img src="<?php echo $path ?>/res/img/hand-made.png" alt="Fait Main">
+                <h4>Fait Main</h4>
+            </div>
+            <div class="box" id="pg">
+                <img src="<?php echo $path ?>/res/img/parfume.png" alt="Parfum">
+                <h4>Parfum de Grasse</h4>
+            </div>
+        </div>
         <div class="cardBox">
             <div class="card">
                 <div>
