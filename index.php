@@ -47,7 +47,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
                     Dolor, unde deleniti adipisci voluptatibus omnis quod dignissimos suscipit sed ea a nemo explicabo veniam fugiat, laudantium ipsa officiis corrupti necessitatibus totam. Adipisci explicabo voluptatem facilis blanditiis tempore tempora alias.
                     Numquam, repellat distinctio.</p>
                 <div class="button-container">
-                    <a href="#" class="button button-wiggle">Qui Sommes Nous ?</a>
+                    <a href="<?php echo $path ?>/metier/nous.php" class="button button-wiggle">Qui Sommes Nous ?</a>
                 </div>
             </div>
 

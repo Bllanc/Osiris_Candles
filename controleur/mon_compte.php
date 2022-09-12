@@ -212,6 +212,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
                         <tr>
                             <td>
                                 <select name="civilite_utilisateur" id="">
+                                    <option value="">Sélectionner votre genre</option>
                                     <option value="Monsieur" <?php if (isset($_SESSION['civilite_utilisateur']) && $_SESSION['civilite_utilisateur'] == "Monsieur") {
                                                                     echo "selected";
                                                                 } ?>>Monsieur</option>

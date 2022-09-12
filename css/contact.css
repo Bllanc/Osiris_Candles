@@ -73,6 +73,7 @@ body {
 .container form input,
 .container form textarea {
   border-radius: 8px;
+  border-style: outset;
 }
 .container button {
   width: 30%;
