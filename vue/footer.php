@@ -17,9 +17,6 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
         <a class="fb" href="https://www.facebook.com/OsirisCandles/" target='_blank'>
             <ion-icon name="logo-facebook"></ion-icon>
         </a>
-        <a class="fb" href="https://www.instagram.com/osiriscandles1/" target='_blank'>
-            <ion-icon name="logo-instagram"></ion-icon>
-        </a>
     </div>
     <hr>
     <table id="contenue_footer">
@@ -48,14 +45,15 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
         </ul>
 
         <hr>
-        <!--  <div>
-            <p class="cc"><a href="https://cyberinfo-connect.fr/" target="_blank">Réalisé par CyberInfo-Connect</a>
+        <div>
+            <p> Copyright &copy 2022 | Osiris Candles.</p>
+            <!--  <p class="cc"><a href="https://cyberinfo-connect.fr/" target="_blank">Réalisé par CyberInfo-Connect</a>
                 <a href="https://www.facebook.com/GuillaumeMantez/" target="_blank">
                     <ion-icon name="logo-facebook"></ion-icon>
                 </a>
 
-            </p>
-        </div>-->
+            </p>-->
+        </div>
     </table>
 
 </footer>

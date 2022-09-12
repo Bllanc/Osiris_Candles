@@ -66,7 +66,7 @@ require_once('../bdd/connect_inc.php');
                     </span>
                     <span class="object">
                         <span>
-                            <input type="text" size="86" placeholder="Objet" aria-required>
+                            <input type="text" size="84" placeholder="Objet" aria-required>
                         </span>
 
                     </span>

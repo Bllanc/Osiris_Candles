@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Times, "Times New Roman", Georgia, serif;
+  font-family: 'Roboto Slab', serif;
 }
+
 body {
   background: whitesmoke;
 }
@@ -21,7 +23,7 @@ body {
   padding: 2%;
 }
 .user {
-  width: 25%;
+  width: 24%;
   padding: 3%;
 }
 
@@ -90,7 +92,7 @@ ul a:hover {
 
 .avatar {
   position: absolute;
-  top: 200px;
+  top: 135px;
   left: 50px;
   border-radius: 50%;
   background-color: #f6d1d8;
@@ -101,7 +103,7 @@ ul a:hover {
 }
 #change {
   position: absolute;
-  top: 250px;
+  top: 180px;
   left: 185px;
 }
 #change ion-icon {
@@ -122,7 +124,7 @@ ul a:hover {
 
 #decon {
   border: none;
-  background-color: white;
+  background-color: whitesmoke;
   transition: 0.5s;
   font-size: 20px;
   width: fit-content;
@@ -271,11 +273,6 @@ span {
 
 /* CARNET D'ADRESSES */
 
-#carnet_adresse {
-  margin: 2% auto;
-  background-color: white;
-  padding: 2%;
-}
 
 #carnet_adresse h3 {
   text-decoration: underline #f6d1d8;

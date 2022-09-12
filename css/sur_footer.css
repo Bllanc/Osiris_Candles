@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
 section {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-#infliv{
+#infliv {
   text-align: center;
-  font-size:12px;
+  font-size: 12px;
 }
 .sur_footer {
   display: flex;
@@ -37,7 +45,7 @@ section {
   transform: rotate(-45deg);
 }
 
-.infos_sur a{
-    text-decoration: none;
-    color: black;
+.infos_sur a {
+  text-decoration: none;
+  color: black;
 }
