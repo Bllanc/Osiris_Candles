@@ -36,7 +36,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
             <li><u>Contacts</u></li>
             <li><u>Adresse :</u> 752 Rue de L'Église </li>
             <li>62340 Hames-Boucres</li>
-            <li><u>Tél :</u> 06 06 06 06 06</li>
+            <li><u>Tél :</u> 07 69 48 22 64</li>
             <li><a href="<?php echo $path ?>/controleur/contact.php">Contactez-nous</a></li>
         </ul>
         <ul>
