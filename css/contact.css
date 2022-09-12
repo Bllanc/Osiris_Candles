@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Times, "Times New Roman", Georgia, serif;
+}
+body {
+  background: whitesmoke;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  padding: 2%;
+  gap: 50px;
+}
+.container ion-icon {
+  color: #f6d1d8;
+}
+.firstL {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.firstL div {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 2%;
+}
+.firstL a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.sndL {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.sndL div {
+  width: 45%;
+  gap: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 2%;
+}
+.sndL .info,
+.sndL .object {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.sndL input {
+  padding: 1%;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container form input,
+.container form textarea {
+  border-radius: 8px;
+}
+.container button {
+  width: 30%;
+  margin: 0 auto;
+  padding: 1%;
+  background: #f6d1d8;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.5s ease-in-out;
+}
+
+.container button:hover {
+  box-shadow: 9px -5px 6px rgb(0 0 0 / 20%);
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
