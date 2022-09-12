@@ -41,8 +41,8 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
         </ul>
         <ul>
             <li><u>Guide D'achats</u></li>
-            <li><a href="<?php echo $path ?>/controleur/cgv.php">Conditions Générale de Vente</a></li>
-            <li><a href="<?php echo $path ?>/controleur/mentions_legal.php">Mentions légales</a>
+            <li><a href="<?php echo $path ?>/metier/cgv.php">Conditions Générale de Vente</a></li>
+            <li><a href="<?php echo $path ?>/metier/mentions_legal.php">Mentions légales</a>
             </li>
 
         </ul>

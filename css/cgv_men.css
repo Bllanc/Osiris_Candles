@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Times, "Times New Roman", Georgia, serif;
+}
+body {
+  background: whitesmoke;
+}
+.navigation {
+  margin-top: 2%;
+  padding: 2%;
+}
+.navigation p {
+  color: #f6d1d8;
+}
+span {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #f6d1d8;
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  box-shadow: 0 7px 25px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  height: 1000px;
+}
