@@ -27,10 +27,40 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
     <div class="navigation">
         <p>
             <a href="<?php echo $path ?>/index.php">Accueil →</a>
-            <span>  Retour </span>
+            <span> Retour </span>
         </p>
     </div>
-    <div class="container"></div>
+    <div class="container">
+        <div>
+            <h1>Retour et Remboursement</h1>
+        </div>
+        <h2>Les retours chez Osiris Candles sont : </h2>
+        <div class="infos_retour">
+            <div>
+                <b>Dans un délais de 2 Semaines</b>
+                <br>
+                <p>à compter de la récéption de votre commande </p>
+            </div>
+            <div>
+                <b>Sur tout les articles </b>
+                <br>
+                <p>avec ou sans emballage</p>
+            </div>
+            <div>
+                <b>Gratuit</b>
+                <br>
+                <p>si vous passez par Mondial Relay</p>
+            </div>
+        </div>
+        <h2>Comment faire ?</h2>
+        <div class="expli">
+            <div>
+                <p>Par voie postale  <ion-icon size="large" name="mail-outline"></ion-icon>
+                </p>
+            </div>
+            <div></div>
+        </div>
+    </div>
 
 
 

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 body {
@@ -29,8 +29,68 @@ span {
 .container {
   display: flex;
   width: 95%;
-  margin:  auto;
-  box-shadow: 0 7px 25px rgb(0 0 0 / 20%);
-  border-radius:10px;
-  height: 1000px;
+  margin: auto;
+  flex-direction: column;
 }
+.container h1,
+.container h2 {
+  padding: 2%;
+  text-decoration: underline;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* Début page retour*/
+
+.infos_retour {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-flow: row wrap !important;
+}
+.infos_retour div {
+  box-shadow: 0 7px 25px rgb(0 0 0 / 20%);
+  background: #f6d1d8;
+  color: white;
+  border-radius: 8px;
+  width: 20%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1%;
+  text-align: justify;
+}
+.infos_retour b {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+}
+.infos_retour p {
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 300;
+}
+.expli {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.expli div {
+  box-shadow: 0 7px 25px rgb(0 0 0 / 20%);
+  background: #f6d1d8;
+  color: white;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1%;
+  text-align: justify;
+}
+
+.expli p {
+  display: flex;
+  align-items: center;
+}
+
+/* Fin page retour  */

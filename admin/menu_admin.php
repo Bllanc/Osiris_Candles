@@ -62,7 +62,7 @@ require_once('../bdd/connect_inc.php');
             </a>
         </li>
         <li>
-            <a href="<?php echo $path ?>/admin/">
+            <a href="<?php echo $path ?>/admin/comms.php">
                 <span class="icon">
                     <ion-icon name="chatbox-ellipses-outline"></ion-icon>
                 </span>
