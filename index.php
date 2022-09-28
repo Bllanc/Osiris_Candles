@@ -35,11 +35,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
 
         <div id="presentation">
             <div id="preText">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, officiis neque cumque consectetur optio tempora accusamus fugiat aut sequi facere amet adipisci eaque ipsum natus excepturi impedit possimus libero aliquid!
-                    Earum velit quisquam architecto, reprehenderit sequi animi ad necessitatibus enim fuga facere. Eaque iure, delectus hic soluta maxime aspernatur reiciendis consectetur accusamus quos suscipit similique, voluptates ab! Similique, odio earum.
-                    Rem vitae voluptas optio officiis animi, consectetur, iusto obcaecati consequuntur distinctio suscipit sit expedita. Tenetur officiis autem commodi nam? Beatae blanditiis totam corrupti nemo, adipisci maxime dolore molestias delectus voluptatibus?
-                    Dolor, unde deleniti adipisci voluptatibus omnis quod dignissimos suscipit sed ea a nemo explicabo veniam fugiat, laudantium ipsa officiis corrupti necessitatibus totam. Adipisci explicabo voluptatem facilis blanditiis tempore tempora alias.
-                    Numquam, repellat distinctio.</p>
+                <p></p>
                 <div class="button-container">
                     <a href="<?php echo $path ?>/metier/nous.php" class="button button-wiggle">Qui Sommes Nous ?</a>
                 </div>
